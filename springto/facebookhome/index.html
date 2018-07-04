@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  	<head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  		<META name="keywords" content="matthaeus,krenn,facebook,home,bobble,javascript,spring,module,physics,animation,simple,protoyping">
+  		<META name="description" content="A protoype of the Facebook Home bobble interaction created with springTo.js">
+  		<META name="revisit-after" content="10-days">
+  		<META name="robots" content="index,follow">
+  		<META name="author" content="Matthaeus Krenn">
+  		<META name="copyright" content="Matthaeus Krenn">
+
+      <meta property="fb:admins" content="625212716" />
+      <meta property="fb:app_id" content="463244093751122" />
+  		<meta property="og:type" content="website">
+  		<meta property="og:url" content="http://matthaeuskrenn.com/springto/facebookhome/">
+  		<meta property="og:title" content="Protoyping Facebook Home's bobble interaction with JavaScript and springTo.js">
+      <meta property="og:image" content="http://matthaeuskrenn.com/springto/facebookhome/fbhog1.png">
+      <meta property="og:site_name" content="Protoyping Facebook Home's bobble interaction with JavaScript and springTo.js">
+      <meta property="og:description" content="Recreation of the Facebook Home bobble interaction using only JavaScript with the
+                                                help of springTo.js, a module that gives amazingly simple access to spring-physics-based
+                                                animations."/>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+		<script src="../springTo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="mkfbhome.js" type="text/javascript" charset="utf-8"></script>
+		
+		<link rel="stylesheet" href="mkfbhome.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		
+		<title>Protoyping Facebook Home's bobble interaction with JavaScript and springTo.js | by Matthaeus Krenn</title>
+		
+	</head>
+  	<body>
+  	  <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=463244093751122";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>	
+
+      
+      <div id="prototype">
+        <div class="stageTable">
+          <div class="stageCell">
+            <div id="protContainer">
+              <div id="messenger" class="shortcut"></div>
+              <div id="apps" class="shortcut"></div>
+
+              <div id="latest" class="shortcut"></div>
+
+              <div id="bobble"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h1>Facebook Home interaction protoype<br>
+      using JavaScript and <a href="..">springTo.js</a></h1>
+      
+      
+      
+      
+      
+      <div id="actions">
+        <div id="twitterButton">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://matthaeuskrenn.com/springto/facebookhome" data-text="Facebook Home interaction protoype using JavaScript" data-via="matthaeus">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div id="fbButton">
+          <div class="fb-like" data-href="http://matthaeuskrenn.com/springto/facebookhome/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+        </div>
+        <div id="moreButton">
+          <a href="..">Start using springTo.js</a>
+        </div>
+      </div>
+      
+      <a href="http://matthaeuskrenn.com" id="mkLink">&copy; Matthaeus Krenn</a>
+      
+      
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24369654-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+      
+
+
+	</body>
+</html>

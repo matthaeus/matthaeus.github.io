@@ -1,0 +1,27 @@
+body {
+    margin:0px;
+    padding:0px;
+    color: #000000;
+    text-align:center;
+    font-family: verdana;
+}
+
+#container {
+    display:inline-block;
+    width:460px;
+    border:0px solid black;
+    text-align:left;
+    /*visibility:hidden;*/
+}
+
+p {
+    font-size:13pt;
+    display:block;
+}
+
+h1 {
+    font-size:26pt;
+    display:block;
+    font-family:georgia;
+}
+

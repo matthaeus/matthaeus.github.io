@@ -1,0 +1,766 @@
+/*/////////////////////////////////////////////////////////// RESET */
+/*Thank you http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+
+@font-face {
+  font-family: SeroWeb-Medium;
+  src: url("SeroWeb-Medium.eot");
+}
+
+@font-face {
+  font-family: SeroWeb-Medium;
+  src: url("SeroWeb-Medium.woff") format("woff");
+}
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////// PAGE */
+
+
+
+body {
+/*	background-color: #000000;*/
+/*	color: #aaaaaa;*/
+	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	margin: 0px auto 0px auto;
+	padding: 0px 0 0 0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+}
+
+
+
+
+.stageTable {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.stageCell {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+#mainStage {
+	display: block;
+	text-align: center;
+	border: 0px solid #eee;
+	height: 300px;
+	
+}
+
+#controlsTop, #controlsBottom {
+	display: block;
+	text-align: center;
+	border: 0px solid #eee;
+	height: 40px;
+}
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////// STEP0*/
+
+
+#step0 {
+	display: inline-block;
+	width: 300px;
+	border: 0px solid red;
+	font-family:  'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	padding: 0px 0 0 0;
+	margin: 130px 0 0 0;
+	text-align: center;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+	cursor: pointer;
+}
+
+
+#step0 > h1 {
+	font-family:  'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	padding: 0px 0 0px 0;
+	color: #999;
+		-webkit-transition: color 100ms linear;
+		   -moz-transition: color 100ms linear;
+		     -o-transition: color 100ms linear;
+		        transition: color 100ms linear;
+}
+
+#step0:hover > h1 {
+	color: #888;
+}
+
+/*#step0.clicked > h1 {
+	color: #333;
+}*/
+
+
+#start {
+/*	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;*/
+	display: inline-block;
+	text-align: center;
+	margin: 10px 0 0 0;
+	width: 50px;
+	height: 50px;
+	background: url('startbig.png') no-repeat 0px 0px;
+/*	border: 1px solid #ddd;*/
+/*	border-bottom: 3px solid #ccc;*/
+	cursor: pointer;
+/*	padding: 8px 0 0 0;*/
+	font-size: 14px;/*
+		-webkit-transition: opacity 200ms linear;
+		   -moz-transition: opacity 200ms linear;
+		     -o-transition: opacity 200ms linear;
+		        transition: opacity 200ms linear;*/
+}
+
+/*#step0:hover > #start {
+	background: url('startbig.png') no-repeat 0px -50px;
+}*/
+
+/*#start:hover {
+	background: #fff url('startbig.png') no-repeat 0px -50px;
+}*/
+
+
+
+#step0.clicked > #start{
+	background: url('startbig.png') no-repeat 0px -100px;
+}
+
+/*#start > img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 80px;
+	height: 30px;
+	background: #fff;
+	cursor: pointer;
+}*/
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////// STEP1*/
+
+
+
+#step1 {
+	display: none;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+
+
+#pickerWrapper {
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	padding: 15px 15px 4px 15px;
+	margin: 0 0 0 0px;
+	border:1px solid #e5e5e5;
+	width: 195px;
+}
+
+#pickerWrapperShadow {
+	display: block;
+	height: 2px;
+	background: #000000;
+	opacity: 0.03;
+	margin: 0 2px 0 2px;
+}
+
+#pickerWrapper > p.stepDesc {
+	display: block;
+	text-align: left;
+	padding: 0 0 4px 0px;
+	margin: 0 0 10px 0px;
+	border-bottom:1px solid #eee;
+}
+
+
+
+
+#color {
+/*	display: none;*/
+	border: 0px solid #ccc;
+	outline: none;
+	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	width: 190px;
+	text-align: center;
+	margin: 4px 0 0 0;
+	padding: 3px 0 6px 0;
+	font-size: 12px;
+	text-transform:uppercase;
+	color: #999;
+}
+
+
+#next {
+/*	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;*/
+	display: inline-block;
+	text-align: center;
+	margin: 0px 0 0 0;
+	width: 50px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 3px solid #ccc;
+	cursor: pointer;
+/*	padding: 8px 0 0 0;*/
+	font-size: 14px;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+#next:hover {
+	margin: 1px 0 0 0;
+	border-bottom: 2px solid #ccc;
+}
+
+#next.clicked {
+	margin: 3px 0 0 0;
+	border-bottom: 1px solid #ddd;
+}
+
+#next > img {
+	display: inline-block;
+	vertical-align: middle;
+/*	width: 80px;
+	height: 30px;*/
+	background: #fff;
+	cursor: pointer;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+#prev {
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	margin: 0px 0 0 0;
+	width: 50px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 3px solid #ccc;
+	cursor: pointer;
+/*	padding: 8px 0 0 0;*/
+	font-size: 14px;
+	opacity: 0.15;
+	/*
+		-webkit-transition: opacity 200ms linear;
+		   -moz-transition: opacity 200ms linear;
+		     -o-transition: opacity 200ms linear;
+		        transition: opacity 200ms linear;*/
+}
+
+#prev.clickable:hover {
+	margin: 1px 0 0 0;
+	border-bottom: 2px solid #ccc;
+}
+
+#prev.clicked {
+	margin: 3px 0 0 0;
+	border-bottom: 1px solid #ddd;
+}
+
+#prev > img {
+	display: inline-block;
+	vertical-align: middle;
+/*	width: 80px;
+	height: 30px;*/
+	background: #fff;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+#prev.disabled {
+/*	opacity: 0.15;*/
+	cursor: default;
+}
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////// STEP2*/
+
+#step2 {
+	display: none;
+	width: 95%;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+
+
+#newMessageText {
+	display: block;
+	height: 70px;
+	background-color: transparent;
+	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	border: 0px solid black;
+	outline: none;
+	font-size: 50px;
+	width: 100%;
+	color:#000000;
+	margin: 81px 0 53px 0;
+	padding: 0;
+	opacity: 1;
+	overflow: hidden;
+		-webkit-transition: color 300ms linear;
+		   -moz-transition: color 300ms linear;
+		     -o-transition: color 300ms linear;
+		        transition: color 300ms linear;
+}
+
+#newMessageText.bright {
+	color:#ffffff;
+}
+
+#newMessageText.spieker {
+	font-family: 'georgia', 'times', 'times new roman', serif;
+	font-weight: normal;
+}
+
+#newMessageText:hover {
+	opacity: 1;
+}
+
+#newMessageText:focus {
+	opacity: 1;
+}
+
+
+
+
+
+
+p.stepDesc {
+	display: block;
+	color: #000;
+	font-size: 12px;
+	margin: 0 0 3px 2px;
+	padding: 0 0 0 0px;
+	color: #777;
+/*	text-align: left;*/
+}
+
+#messageInputBox > div > p {
+	margin: 0 0 5px 0;	
+}
+
+.messageInputBox {
+	display: block;
+	background-color: #fff;
+	text-align: left;
+	padding: 15px;
+	opacity: 1;
+	margin: 0 0 0 0px;
+	border:1px solid #e5e5e5;
+}
+
+#newMessageInput {
+	display: block;
+	width: 350px;
+	outline: none;
+	margin: 0 0 0 0px;
+	border:1px solid #aaa;
+	height: 16px;
+	padding: 3px;
+	font-size: 12px;
+	
+}
+
+
+#colSwitch {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height:42px;
+	background: url('colswitch2.png') no-repeat center center;
+	cursor: pointer;
+	opacity: 1;
+	padding: 0px 0px 0 0px;
+	margin: 0px 0px 0 7px;
+/*	border-left: 0px solid #eee;*/
+/*	border: 1px solid #ddd;*/
+/*	border-bottom: 3px solid #ccc;*/
+}
+
+#messageShadow {
+	display: block;
+	height: 2px;
+	opacity: 0.03;
+	background: #000000;
+	margin: 0 2px 0 2px;
+}
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////// STEP3*/
+
+#step3 {
+	display: none;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+/*.shareBox {
+	display: inline-block;
+	background: #fff;
+	padding: 10px;
+}*/
+
+#shareLink {
+	display: block;
+	text-align: left;
+	background: #fff;
+	padding: 15px;
+	border:1px solid #e5e5e5;
+	width: 400px;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+#shareLink > p {
+	display: block;
+	font-size: 12px;
+	margin: 10px 0 3px 2px;
+	padding: 0 0 0 0px;
+	color: #777;
+}
+
+
+#shareLink > .doneSocial {
+	margin: 0px 0 0 2px;
+}
+
+#shareLink > input {
+	display: block;
+	font-size: 12px;
+	width: 392px;
+	color: #000;
+	cursor: text;
+	border:1px solid #aaa;
+	height: 16px;
+	padding: 3px;
+	font-size: 12px;
+}
+
+
+
+
+#shareLink > h2 {
+	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 0px 0 10px 0px;
+	margin: 0 0 0 1px;
+	color: #777;
+}
+
+
+
+#shareFB {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	background: #3b5998;
+	margin: 4px 0px 0 1px;
+	cursor: pointer;
+	border-bottom: 3px solid #2c4373;
+}
+
+#shareFB:hover {
+	margin: 4px 0px 0 1px;
+	border-top: 1px solid #fff;
+	border-bottom: 2px solid #2c4373;
+}
+
+#shareFB.clicked {
+	margin: 4px 0px 0 1px;
+	border-top: 3px solid #fff;
+	border-bottom: 0px solid #2c4373;
+}
+
+
+
+#shareTwitter {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	background-color: #00dddd;
+	margin: 4px 0px 0 0px;
+	cursor: pointer;
+	border-bottom: 3px solid #2eb7e5;
+}
+
+#shareTwitter:hover {
+	margin: 4px 0px 0 0px;
+	border-top: 1px solid #fff;
+	border-bottom: 2px solid #2eb7e5;
+}
+
+#shareTwitter.clicked {
+	margin: 4px 0px 0 0px;
+	border-top: 3px solid #fff;
+	border-bottom: 0px solid #2eb7e5;
+}
+
+#shareLinkShadow {
+	display: block;
+	height: 2px;
+	margin: 0 0 0 1px;
+	opacity: 0.03;
+	background: #000000;
+	margin: 0 2px 0 2px;
+}
+
+#finalLink {
+	text-decoration: none;
+	font-size: 12px;
+	color: #222;
+}
+
+#finalLink:hover {
+	text-decoration: underline;
+	font-size: 12px;
+	color: #000;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////// REPLAY*/
+
+
+
+#message {
+	display: none;
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', 'verdana', sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	padding: 0 0 0px 0;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+#colorTile {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width: 100%;
+	background-color: #ffffff;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+#ad {
+	display: none;
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', 'verdana', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 300px 0px 0px 0;
+/*	-webkit-transition: opacity 200ms linear;
+	   -moz-transition: opacity 200ms linear;
+	     -o-transition: opacity 200ms linear;
+	        transition: opacity 200ms linear;*/
+}
+
+#ad > a {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', 'verdana', sans-serif;
+/*	font-weight: bold;*/
+	text-decoration: none;
+	font-size: 13px;
+	padding: 0 0 0px 0;
+}
+
+#ad > a:hover {
+	opacity: 0.5;
+}
+
+#adImg {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', 'verdana', sans-serif;
+	padding: 5px 0px 0px 0;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////// ERROR*/
+
+#stageTableError {
+	display: table;
+}
+
+#stageCellError {
+	display: table-cell;
+}
+
+#errorMsg {
+	display: inline;
+	vertical-align: middle;
+	text-align: center;
+/*	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', 'verdana', sans-serif;*/
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'verdana', sans-serif;
+/*	font-weight: bold;*/
+	font-size: 14px;
+/*	padding: 130px 0 130px 0;*/
+	color: #888;
+}
+
+#errorLink {
+/*	display: block;*/
+	vertical-align: middle;
+	text-align: center;
+/*	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', 'verdana', sans-serif;*/
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'verdana', sans-serif;
+/*	font-weight: bold;*/
+	font-size: 14px;
+/*	padding: 0 0 0px 0;*/
+	color: #222;
+	text-decoration: none;
+}
+
+#errorLink:hover {
+	opacity: 0.5;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////// ABOUT*/
+
+
+#about {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+/*	font-family: 'SeroWeb-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', 'verdana', sans-serif;*/
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'verdana', sans-serif;
+	margin: 10px;
+	font-size: 10px;
+	color: #000;
+	opacity: 0.5;
+}
+
+#about:hover {
+	opacity: 1;
+}
+
+#about > a {
+	color: inherit;
+	text-decoration: none;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'verdana', sans-serif;
+}
+
+
+
+
+
+
+
+
+

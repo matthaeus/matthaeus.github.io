@@ -1,0 +1,236 @@
+/*/////////////////////////////////////////////////////////// RESET */
+/*Thank you http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////*/
+
+body {
+	text-align: center;
+	background-color: #000000;
+	color:#ffffff;
+	font-family:verdana, helvetica neue, helvetica, arial, sans-serif;
+}
+
+
+#header {
+	display:block;
+	background-color: #222;
+	padding: 5px 10px 10px 20px;
+	margin: 0 0 50px 0;
+	color:#888;
+	text-align:left;
+}
+
+a.homeButton {
+	display:inline-block;
+	text-align:left;
+	color:#fff;
+	font-size: 12px;
+	margin:0 0 0px 0;
+	padding:0px;
+}
+
+
+h1 {
+	font-size:20px;
+	margin: 0 0 2px 0;
+/*	font-weight:bold;*/
+}
+
+p.description {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+
+/*/////////////////////////////////////////////////////////// INPUT*/
+
+#inputDiv {
+	display:inline-block;
+	border: 0px solid blue;
+	margin: 0px 0 20px 0;
+	padding: 0 0 0 21px;
+	text-align:left;
+	
+}
+
+#searchBox {
+	display:inline-block;
+	vertical-align:top;
+	font-size:20px;
+	padding: 3px 3px 3px 5px;
+	margin: 00px 0 00px 0;
+	background-color: #2a2a2a;
+	border:1px solid #aaa;
+	height:38px;
+	color:#fff;
+	width:400px;
+	outline:none;
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	
+	-webkit-transition-property: padding, border;
+	-webkit-transition-duration: 80ms;
+	-webkit-transition-timing-funciton: ease-out;
+	
+	-moz-transition-property: padding, border;
+	-moz-transition-duration: 80ms;
+	-moz-transition-timing-funciton: ease-out;
+	
+	-o-transition-property: padding, border;
+	-o-transition-duration: 80ms;
+	-o-transition-timing-funciton: ease-out;
+}
+
+#searchBox:hover {
+	padding: 3px 3px 3px 8px;
+	border:1px solid #ffffff;
+}
+
+#searchBox:focus{
+	background-color: #222;
+	padding: 3px 3px 3px 8px;
+	border:1px solid #ffffff;
+}
+
+#searchButton {
+	display:inline-block;
+	vertical-align:top;
+	padding: 9px 0 0 8px;
+	margin: 0px 0 0px 0;
+	cursor:pointer;
+	opacity:0.7;
+}
+
+#searchButton.go {
+	opacity:1;
+}
+
+/*/////////////////////////////////////////////////////////// OADING MESSAGE*/
+
+#loadingMessage {
+	display:none;
+	margin:20px 0 20px 0;
+	padding:0;
+}
+
+#loadingMessage > img {
+	display:inline-block;
+	margin:0 10px 0 0;
+	padding:0px 0 0 0;
+	vertical-align:middle;
+}
+
+#loadingMessage > p {
+	display:inline-block;
+	margin:0;
+	padding: 0 0 0px 0;
+	vertical-align:middle;
+	font-size:12px;
+	padding:0px 0 0 0;
+}
+
+
+/*/////////////////////////////////////////////////////////// RESULTS*/
+
+#results {
+	
+}
+
+.result {
+	display:block;
+	background: url('loading.gif') no-repeat center center;
+	margin: 30px 0 0px 0;
+}
+
+.resultImage {
+	display:inline-block;
+	cursor: pointer;
+	border:1px solid #333333;
+}
+
+.resultDescription {
+	display: block;
+	color:#aaaaaa;
+	font-size:10px;
+	margin:4px 0 0 0;
+}
+
+
+#poweredBy {
+	display:none;
+}
+
+
+
+/*/////////////////////////////////////////////////////////// STANDARDS*/
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #777777;
+}
+
+
+
+
+
+
+
+

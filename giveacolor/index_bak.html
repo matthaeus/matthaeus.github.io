@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<!-- <base href="http://giveacolor.com/"> -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<META name="revisit-after" content="2-days">
+	<META name="robots" content="index,follow">
+	<META name="copyright" content="Matth&auml;us Krenn">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://www.giveacolor.com/giveacolor.jpg">
+    <meta property="og:site_name" content="Give a Color">
+	
+	<META name="keywords" content="matth&auml;us,matthaeus,krenn,give,a,color,ux,user,experience,design">
+	<META name="description" content="Give A Color by Matth&auml;us Krenn.">
+	<META name="author" content="Matth&auml;us Krenn">
+	<meta property="og:title" content="Give a Color">
+    <meta property="og:url" content="http://giveacolor.com">
+    <meta property="og:description" content="Give a Color"/>
+		
+    <title>Give a Color</title>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="farbtastic.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="giveacolor.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="farbtastic.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	
+</head>
+
+
+
+
+<body>
+	<script src="quickHash.js" type="text/javascript" charset="utf-8"></script>
+	
+	<div id="colorTile"></div>
+	
+	<div id="stageTable" class="stageTable">
+		<div id="stageCell" class="stageCell">
+			
+			<div id="mainStage">
+				<div id="step0" class="step0">
+					<h1>Give a Color</h1>
+					<p id="projectDescription">Pick a color and send it to your friends.</p>
+				</div> 
+				<div id="step1" class="step1">
+					<div id="pickerWrapper">
+						<p class="stepDesc">Pick a color</p>
+						<div id="picker"></div>
+						<input type="text" id="color" value="#ffffff" maxlength="7"/>
+					</div>
+					<div id="pickerWrapperShadow"></div>
+				</div>
+				
+				<div id="step2" class="step2">
+					<input id="newMessageText" value="" readonly="readonly">
+					<div style="display: inline-block">
+						<div id="messageInputBox" class="messageInputBox textControl">
+							<div style="display: inline-block">
+								<p class="stepDesc">Add a message</p>
+								<input type="text" id="newMessageInput" value="" maxlength="45" class="edit" />
+							</div>
+							<img id="colSwitch" src="colswitch.png" />
+							<!-- <div id="colSwitch" class="textControl clickable">
+								<img src="colswitch.png" />
+							</div> -->
+						</div>
+						<div id="messageShadow"></div>
+					</div>
+					
+				</div>
+				
+				<div id="step3" class="step3">
+					<div id="messageCopy">
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		
+			
+			<div id="controlsBottom">
+				<div id="start" class="step0 clickable">
+					<img src="next.png" />
+				</div>
+				
+				<div id="prev" class="disabled">
+					<img src="prev.png" />
+				</div>
+				
+				<div id="next" class="clickable">
+					<img src="next.png" />
+				</div>
+				
+				<div id="share" class="step3">
+					<div id="shareLink" class="shareBox">
+						<h2>Done. Now give that color away.</h2>
+						<p>Here is the unique link to this color</p>
+						<input type="text" id="finalResult" value="http://giveacolor.com/#fake" readonly="readonly" />
+						<p class="doneSocial">Share it with your friends on</p>
+						<div id="shareFB" class="shareBox clickable"><img src="fb.png" /></div>
+						<div id="shareTwitter" class="shareBox clickable"><img src="tw.png" /></div>
+					</div>
+					<div id="shareLinkShadow"></div>
+					<!-- <div id="preview" class="shareBox">Preview</div> -->
+				</div>
+			</div>
+			
+	
+			
+			<div id="about">
+				&copy; <a href="http://thingsfromthefuture.com">Matth&auml;us Krenn</a>
+			</div> 
+
+			
+	
+			
+		</div>
+	</div>
+	
+	<div id="stageTableReplay" class="stageTable">
+		<div id="stageCellReplay" class="stageCell">
+			<div id="message"></div>
+			<div id="ad">Give a color to someone too</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<script src="giveacolor.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-24369654-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>

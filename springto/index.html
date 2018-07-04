@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<META name="keywords" content="matthaeus,krenn,javascript,spring,module,physics,animation,simple,protoyping">
+		<META name="description" content="springTo.js | Amazingly simple spring-physics based animation">
+		<META name="revisit-after" content="10-days">
+		<META name="robots" content="index,follow">
+		<META name="author" content="Matthaeus Krenn">
+		<META name="copyright" content="Matthaeus Krenn">
+
+    <meta property="fb:admins" content="625212716" />
+    <meta property="fb:app_id" content="463244093751122" />
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://matthaeuskrenn.com/springto/">
+		<meta property="og:title" content="springTo.js | Amazingly simple spring-physics based animation">
+    <meta property="og:image" content="http://matthaeuskrenn.com/springto/springtoog2.png">
+    <meta property="og:site_name" content="springTo.js | Amazingly simple spring-physics-based animation">
+    <meta property="og:description" content="springTo.js is a lightweight JavaScript module that gives the simplest possible
+                                              access to spring-physics based animations in the browser. It is designed to
+                                              require only a single line of code which can be run from anywhere in your page."/>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+		<script src="springTo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="springToDemo.js" type="text/javascript" charset="utf-8"></script>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="springTo.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		
+		<title>springTo.js | Amazingly simple spring-physics based animation | by Matthaeus Krenn</title>
+		
+	</head>
+  	<body>
+  	  <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=463244093751122";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>	
+
+
+      <div id="backSection">
+  	    <a href="../">&#171; more projects</a>
+  	  </div>
+      
+      <div id="demo">
+        <div class="stageTable">
+          <div class="stageCell">
+            <div id="demoContainer">
+              <img src="springtohero.png" />
+              <h2 class="unselectable">Delightful, responsive interactions right in your browser.</h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <div id="anchor"></div>
+      
+      <div id="circle">
+      </div>
+      
+      
+      <div class="divider"></div>
+      
+      <div id="descContainer">
+        <p>
+          springTo.js is a lightweight JavaScript module that gives the simplest possible
+          access to spring-physics based animations in the browser. It is designed to
+          require only a single line of code which can be run from anywhere in your page.<br>
+          While not necessary, it won't hurt to have some basic understanding of JavaScript
+          to use it.<br><br>
+          Beginners, go <a href="http://www.w3schools.com/js/js_howto.asp">here</a> to learn how to 
+          include a JavaScript file into your HTML. And 
+          <a href="http://www.w3schools.com/jsref/event_onclick.asp">this</a> is the easiest way to
+          run the required line of code.
+        </p>
+      </div>
+      
+      
+      <!-- <div class="divider"></div> -->
+      
+      <div id="codeContainer">
+        
+        <h1>Move any object on the screen<br>with just one line of code</h1>
+        
+        
+        <div id="codeDetailsContainer">
+          <div id="codeDetailsSlider">
+            <div class="codeDetail"></div><!--
+            --><div class="codeDetail">// The unique identifier for the element you want to move.</div><!--
+            --><div class="codeDetail">// Horizontal target position. (px)</div><!--
+            --><div class="codeDetail">// Vertical target position. (px)</div><!--
+            --><div class="codeDetail">// The combination of these values defines the characteristics of the movement. (optional)
+                                       <br>// They are: spring stiffness, object mass, friction.</div><!--
+            --><div class="codeDetail">// Delay before movement begins. (ms) (optional)</div><!--
+            --><div class="codeDetail">// Horizontal speed at beginning of movement. (optional)<br>
+                                       // Useful for movement that doesn't follow a straight line.</div><!--
+            --><div class="codeDetail">// Vertical speed at beginning of movement. (optional)<br>
+                                       // Useful for movement that doesn't follow a straight line.</div>
+          </div>
+        </div>
+        
+        <br>
+        
+        
+        
+        <h2>elementSpringTo(<span id="code1" class="c" cdi="1">'#circle'</span>, 
+                            <span id="code2" class="c" cdi="2">300</span>, 
+                            <span id="code3" class="c" cdi="3">250</span>, 
+                            <span id="code4" class="c" cdi="4">[120, 10, 3]</span>,
+                            <span id="code5" class="c" cdi="5">1000</span>,
+                            <span id="code6" class="c" cdi="6">200</span>,
+                            <span id="code7" class="c" cdi="7">100</span>);</h2>
+      
+      
+        <!-- <div id="codeDesc">
+          After embedding the springTo.js file in your html page, 
+          any element with position fixed, absolute or relative 
+          can be moved by using the above line of JavaScript code.
+        </div> -->
+        
+        <br>
+        
+        
+      
+        <!-- <div id="codeDesc">
+          <span class="code1 cD" cdi="1">DOM ELEMENT IDENTIFIER</span><br>
+          <span class="code2 cD" cdi="2">TARGET POSITION X COORDINATE</span><br>
+          <span class="code3 cD" cdi="3">TARGET POSITION Y COORDINATE</span><br>
+          <span class="code4 cD" cdi="4">OBJECT MASS, SPRING STIFFNESS, FRICTION</span><br>
+          <span class="code5 cD" cdi="5">DELAY</span><br>
+        </div> -->
+      
+      </div>
+      
+      <!-- <div class="divider"></div> -->
+      
+      <div id="examplesContainer">
+        
+          <h1>see it in action</h1>
+          
+          <a href="facebookhome/"><h2>Facebook Home Bobble Prototype</h2></a>
+      </div>
+      
+      
+      
+      <div class="divider"></div>
+      
+      
+      <div id="howtoContainer">
+        
+          <h1>Get started</h1>
+          
+          <p>Please be aware that as of now,<br>springTo.js is an alpha-stage proof of concept<br>
+            and not meant for anything but experimental applications.</p><br>
+          
+          <a href="springTo.zip"><h2>Download</h2></a><br>
+      </div>
+      
+      <div class="divider"></div>
+    
+      
+      <div id="actions">
+        <div id="twitterButton">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://matthaeuskrenn.com/springto/" data-text="Amazingly simple spring-physics based animations in JavaScript" data-via="matthaeus">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div id="fbButton">
+          <div class="fb-like" data-href="http://matthaeuskrenn.com/springto/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div id="footer">
+  	    <p>&copy; Matthaeus Krenn</p>
+  		  <img src="../srcfiles/madeinvienna.png" title="Made in Vienna">
+  		</div>
+  		
+  		
+  		
+  		<script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24369654-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+      
+
+
+	</body>
+</html>

@@ -1,0 +1,384 @@
+/*/////////////////////////////////////////////////////////// RESET */
+/*Thank you http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+
+
+div.wrapper {
+	margin:0;
+	padding:0;
+	border:1px solid black;
+}
+
+
+
+/*/////////////////////////////////////////////////////////// PAGE */
+
+  
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: helvetica, verdana, arial, sans-serif;
+	margin: 0px auto 0px auto;
+	padding: 0px 0 0 0;
+}
+
+
+div.section {
+	display: block;
+	margin: 0px auto 60px auto;
+	width: 500px;
+	border: 0px solid black;
+}
+
+
+
+/*/////////////////////////////////////////////////////////// HEADER */
+
+
+#header {
+	display:block;
+	background-color: #eee;
+	padding: 10px 20px 20px 20px;
+	margin: 0 0 50px 0;
+	color:#000;
+	text-align:left;
+}
+
+a.homeButton {
+	display:inline-block;
+	text-align:left;
+	font-size: 12px;
+	margin:0 0 12px 0;
+}
+
+
+h1 {
+	font-size:20px;
+	margin: 0 0 2px 0;
+/*	font-weight:bold;*/
+}
+
+p.description {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////////////// MAIN INPUT */
+
+
+
+#aac {
+	display: block;
+	margin: 0 0 2px 0;
+}
+
+/*#aac.inactive {
+	opacity: 0.2;
+}*/
+
+#aac > p {
+	display: block;
+	font-size: 14px;
+	margin: 0 0 5px 7px;
+}
+
+#aac.inactive > p {
+	color: #dddddd;
+}
+
+#aac > input {
+	display: inline-block;
+	width: 490px; /*491*/
+	font-size: 18px;
+/*	background: url('loading.gif') no-repeat 460px -7px;*/
+	padding: 3px 3px 3px 5px;
+	outline: none;
+}
+
+#aac.inactive > input {
+	background-color: #4E9DEA;
+	color: #ffffff;
+	opacity: 0.6;
+/*	width:100px;*/
+	text-align: center;
+	cursor: pointer;
+}
+
+
+
+/*/////////////////////////////////////////////////////////// MESSAGE */
+
+.message {
+	display:block;
+	width:494px;
+	height:20px;
+	padding:3px 3px 3px 6px;
+	margin: 0 0 10px 0;
+	border: 0px solid #4E9DEA;
+	background: #fff;
+}
+
+.message.inactive {
+	opacity: 0.2;
+	background-color: #fff;
+}
+
+.messageText {
+	display:inline-block;
+	margin: 3px 0px 0px 0px;
+	padding: 0;
+	color: #4E9DEA;
+	font-size: 11px;
+	border: 0px solid black;
+	vertical-align: top;
+}
+
+.messagePic {
+	display:none;	
+	margin: 0px 6px 0px 0px;
+	padding:0;
+	border: 0px solid black;
+	vertical-align: top;
+	opacity: 1;
+	height: 16px;
+	width:16px;
+	background: url('empty.png') no-repeat top left;
+}
+
+
+
+/*/////////////////////////////////////////////////////////// MISSINGIND*/
+
+#missingIndicators {
+	display: inline-block;
+/*	position:absolute;*/
+	margin: 0 0 0 0px;
+	padding:0;
+	text-align:left;
+	width:20px;
+	background: #ffffff;
+	height:270px;
+}
+
+
+.mI {
+	display:block;
+	height:44px;
+	background: url('missing.png') no-repeat 3px 15px;
+	vertical-align:bottom;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.mic {
+	display:block;
+	margin:0;
+	padding:0;
+	background-color:#ffffff;
+	height:100%;
+	width:100%;
+}
+
+
+
+/*/////////////////////////////////////////////////////////// RESULTS */
+
+
+
+
+#results {
+	display: inline-block;
+/*	position:absolute;*/
+	margin: 0 0 0 0px;
+	text-align:left;
+	width:500px;
+	border:0px solid black;
+}
+
+#results.inactive {
+	display: block;
+	margin: 0 0 0 0;
+}
+
+
+/*/////////////////////////////////////////////////////////// MAP */
+
+
+
+#mapContainer {
+	display: inline-block;
+/*	float: right;*/
+/*	width:210px;*/
+/*	height: 241px;*/
+	margin: 13px 0 0 0px;
+	overflow: hidden;
+	z-index: 1;
+	background: red;
+}
+
+#mapContainer.inactive {
+	opacity: 0.25;
+}
+
+
+
+#bingMap{ 
+/*	display:none;*/
+	position:absolute;
+/*	overflow:hidden;*/
+	width:210px;
+	height: 241px;
+	margin: 0px 0 0px 0px;
+	padding: 0 0 0 0;
+	cursor: default;
+}
+
+
+
+/*/////////////////////////////////////////////////////////// STRUCTURED RESULTS*/
+
+
+
+#resultFields {
+	display: inline-block;
+	text-align: left;
+	margin: 0px 15px 0 0px;
+	width:270px;
+	z-index: 1;
+	background-color: #ffffff;
+}
+
+#resultFields.inactive {
+	opacity: 0.25;
+}
+
+#resultFields > li {
+	display: block;
+	margin: 0 0 10px 0px;
+}
+
+#resultFields > li > p {
+	display: block;
+	font-size: 10px;
+	color: #888888;
+	margin: 0 0 3px 5px;
+	padding: 0 0 0 0;
+}
+
+#resultFields > li > input {
+	display: inline-block;
+	font-size: 10px;
+	color: #000000;
+	width: 100%;
+	height: 15px;
+	padding: 2px;
+}
+
+
+#resultFields > li > input.missingValue {
+/*	background: #e7eef6;*/
+}
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////// EXTRAS*/
+
+
+#startOver {
+	display:block;
+	position:relative;
+	top: 0px;
+	left: 0px;
+	margin: 0px 0px 0px 0px;
+	width: 500px;
+	height: 100px;
+	background-color: #000000;
+	text-align:center;
+	z-index: 10;
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////// ALL*/
+
+input {
+	background-color: #fafafc;
+	border: 1px solid #cccccc;
+}
+
+
+
+/*/////////////////////////////////////////////////////////// STANDARDS*/
+
+a {
+	color: #35a2ff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0068c0;
+}
+
+
+
+
+

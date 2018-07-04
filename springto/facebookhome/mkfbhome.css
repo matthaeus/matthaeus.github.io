@@ -1,0 +1,294 @@
+/*/////////////////////////////////////////////////////////// RESET */
+/*Thank you http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+
+
+.stageTable {
+  display: table;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.stageCell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////*/
+
+
+body {
+	background-color: #F8F8F8;
+	margin: 0px auto 0px auto;
+	padding: 0px 0 0 0;
+	text-align: center;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'verdana', sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	color: #303030;
+}
+
+
+#prototype {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 500px;
+/*  background: ;*/
+}
+
+
+#protContainer {
+  display: inline-block;
+  position: relative;
+/*  outline: 1px solid black;*/
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  height: 300px;
+  padding: 0px 0 0 0;
+}
+
+
+#bobble {
+  display: block;
+  position: absolute;
+  top: 200px;
+  left: 220px;
+  width: 60px;
+  height: 60px;
+  background: url('me.png') center center no-repeat;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+}
+
+
+.shortcut {
+  
+  top: 200px;
+  left: 220px;
+  width: 50px;
+  height: 50px;
+  background: #808080;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+}
+
+.shortcut.active {
+  opacity: 0.85;
+}
+
+.shortcut.hidden.active {
+  visibility: hidden;
+}
+
+
+
+
+#messenger {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+
+
+
+
+#apps {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+
+#latest {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+
+
+
+h1 {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #303030;
+}
+
+
+h1 a {
+  font-weight: 700;
+  color: #303030;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #303030;
+  font-style: italic;
+	font-family: 'georgia', 'times', 'times new roman', serif;
+	margin: 15px 0 0 0;
+}
+
+
+
+
+#actions {
+  display: block;
+  width: 600px;
+  margin: 100px auto;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  text-align: left;
+  padding: 80px 0 70px 0;
+}
+
+
+#twitterButton {
+  display: inline-block;
+  height: 30px;
+  min-width: 100px;
+/*  background: red;*/
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+
+#fbButton {
+  display: inline-block;
+  height: 30px;
+  min-width: 100px;
+/*  background: blue;*/
+  overflow: hidden;
+}
+
+
+#moreButton {
+  display: inline-block;
+  float: right;
+  height: 30px;
+  min-width: 100px;
+  overflow: hidden;
+  text-align: right;
+  margin-right: 30px;
+  padding: 3px 0 0 0;
+}
+
+#moreButton a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #303030;
+}
+
+#moreButton a:hover {
+  text-decoration: underline;
+}
+
+
+
+#mkLink {
+  font-size: 13px;
+  text-decoration: none;
+  color: #303030;
+  padding-bottom: 60px;
+}
+
+#mkLink:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

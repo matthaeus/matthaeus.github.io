@@ -1,0 +1,254 @@
+/*/////////////////////////////////////////////////////////// RESET */
+/*Thank you http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////// PAGE */
+
+
+
+body {
+	background-color: #F8F8F8;
+	margin: 0px auto 0px auto;
+	padding: 60px 0 0 0;
+	text-align: center;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'verdana', sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	color: #303030;
+}
+
+div.wrapper {
+	display: block;
+	margin: 0px auto 0px auto;
+	text-align: left;
+	max-width: 880px;
+/*	outline: 1px solid red;*/
+	padding: 0 40px 0 40px;
+}
+
+@media screen and (max-width: 480px) {
+	div.wrapper {
+		padding: 0 20px 0 20px;
+	}
+}
+
+div.section {
+	display: block;
+}
+
+#intro > h1 {
+	color: #808080;
+}
+
+#intro > p {
+	color: #303030;
+}
+
+#intro > p > a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #303030;
+}
+
+#intro > p > a:hover {
+	text-decoration: underline;
+}
+
+
+#content > ul {
+	display: block;
+	list-style: none;
+}
+
+#content > ul > li {
+	display: block;
+	position: relative;
+	list-style: none;
+	margin: 40px 0px 80px 0;
+	padding: 0;
+/*	outline: 1px solid #e0e0e0;*/
+}
+
+#content > ul > li > a {
+	text-decoration: none;
+}
+
+#content > ul > li > a:hover > .projectDescription > h2 {
+	text-decoration: underline;
+}
+
+
+.projectContainer {
+	display: block;
+	margin: 0;
+	padding: 0;
+/*	background: url('srcfiles/imok.jpg');*/
+	background-size: cover;
+/*	background-repeat:no-repeat;*/
+/*	background-position:center;*/
+}
+
+.projectContainer > img{
+	display: block;
+	width: 100%;
+	outline: 1px solid rgba(0,0,0,0.02);
+}
+
+.projectDescription {
+	display: inline-block;
+	position: absolute;
+	width: 200px;
+	margin: 0px;
+	padding: 20px;
+/*	background: red;*/
+}
+
+
+.projectDescription > h2{
+	font-weight: bold;
+	color: #303030
+}
+
+.projectDescription > h2.white{
+	color: #e0e0e0
+}
+
+.projectDescription > p{
+	color: #505050
+}
+
+.projectDescription > p.white{
+	color: #b0b0b0
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+	.projectDescription {
+		position: static;
+		width: auto;
+		padding: 10px;
+	}
+	
+	.projectDescription > h2 {
+		display: inline;
+		color: #303030 !important;
+	}
+	
+	.projectDescription > p {
+		display: inline;
+		color: #505050 !important;
+	}
+	
+	.projectDescription > p.date {
+		display: inline;
+		color: #505050 !important;
+	}
+
+	#content > ul > li {
+		margin: 40px 0px 40px 0;
+	/*	outline: 1px solid #e0e0e0;*/
+	}
+}
+
+
+
+
+#footer {
+	font-family: 'georgia', 'times', 'times new roman', serif;
+	text-align: center;
+	padding: 60px 0;
+}
+
+
+#footer > img {
+/*	display: block;*/
+	margin: 20px 0;
+}
+
+
+#footer > p {
+	display: block;
+	margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

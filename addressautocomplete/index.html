@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  	<head>	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<META name="keywords" content="matthaeus,matthaeus,krenn,address,auto,complete,ux,user,experience,design">
+		<META name="description" content="Auto Address Complete by Matthaeus Krenn. A new way to enter you address on the web.">
+		<META name="revisit-after" content="10-days">
+		<META name="robots" content="index,follow">
+		<META name="author" content="Matthaeus Krenn">
+		<META name="copyright" content="Matthaeus Krenn">
+	    <title>Address Auto Complete</title>
+
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript" charset="utf-8"></script> 		
+		
+		<script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	
+		<script src="aac.js" type="text/javascript" charset="utf-8"></script>
+	    
+		<link rel="stylesheet" href="aac.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+	</head>
+	<body>
+		<div id="header">
+			<a href="../" class="homeButton">&#171; more projects</a>
+			<h1>Address Auto Complete</h1>
+			<p class="description">Using bing's geocoding API to change how we enter addresses on websites.<br>2011</p>
+		</div>
+		
+		<div class="section" style="padding:0 0 0 25px;margin: 0px auto 10px auto;">
+			<div id="aac">
+				<p class="">Enter your address</p>
+				<input type="text" id="aacInput" autofocus/>
+			</div>
+		
+			<div id="messageMain" class="message inactive">
+				<img src="empty.png" class="messagePic" /><p class="messageText"></p>
+			</div>
+		</div>
+		
+		<div class="section" style="width:525px;">
+			<div id="missingIndicators">
+				<div class="mI">
+					<div id="" class="mic mic_addressLine">
+					</div>
+				</div>
+				<div class="mI">
+					<div id="" class="mic mic_additionalInfo">
+					</div>
+				</div>
+				<div class="mI">
+					<div id="" class="mic mic_locality">
+					</div>
+				</div>
+				<div class="mI">
+					<div id="" class="mic mic_postalCode">
+					</div>
+				</div>
+				<div class="mI">
+					<div id="" class="mic mic_adminDistrict">
+					</div>
+				</div>
+				<div class="mI">
+					<div id="" class="mic mic_countryRegion">
+					</div>
+				</div>
+			</div>
+		
+			<div id="results">
+				<ul id="resultFields" class="inactive">
+					<li>
+						<p class="outputLabel">Street</p>
+						<input type="text" id="addressLine" class="inactive outputBox" />
+					</li>					
+					<li>
+						<p class="outputLabel">Apt, Floor, etc.</p>
+						<input type="text" id="additionalInfo" class="inactive outputBox" />
+					</li>
+					<li>
+						<p class="outputLabel">City</p>
+						<input type="text" id="locality" class="inactive outputBox" />
+					</li>
+					<li>
+						<p class="outputLabel">ZIP</p>
+						<input type="text" id="postalCode" class="inactive outputBox" />
+					</li>
+					<li>
+						<p class="outputLabel">State/Region</p>
+						<input type="text" id="adminDistrict" class="inactive outputBox" />
+					</li>
+					<li>
+						<p class="outputLabel">Country</p>
+						<input type="text" id="countryRegion" class="inactive outputBox" />
+					</li>
+				</ul>
+				<div id="mapContainer" class="inactive">
+					<div id="bingMap"></div>
+				</div>
+			</div>	
+		</div>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-24369654-3']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>		
+	</body>
+</html>

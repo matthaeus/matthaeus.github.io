@@ -1,0 +1,19 @@
+#scrollIndex {
+	position:fixed;
+	display:block;
+	top:0px;
+	right:0px;
+	height:100%;
+	width:100%;
+	z-index:200;
+}
+
+.siEntry {
+	position:absolute;
+	display:inline-block;
+	border:0px solid red;
+	right:10px;
+	font-size:10px;
+	font-family:helvetica;
+	color:#000000;
+}

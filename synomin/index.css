@@ -1,0 +1,261 @@
+/*/////////////////////////////////////////////////////////// RESET */
+/*Thank you http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////// PAGE */
+
+
+
+body {
+  display: block;
+/*	background-color: #000000;*/
+/*	color: #aaaaaa;*/
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	margin: 0px auto 0px auto;
+	padding: 0px 0 0 0;
+	text-align: left;
+	background: #fff;
+/*  font-weight:bold;*/
+}
+
+#header {
+  padding: 10px;
+  background: #f8f8f8;
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+#header > a {
+  font-size: 11px;
+  text-decoration: none;
+  font-weight: bold;
+  color:#000;
+}
+
+#header > a:hover {
+  font-size: 11px;
+  text-decoration: underline;
+  color:#000;
+}
+
+
+#stage {
+  display: block;
+  position: relative;
+  width: 700px;
+  margin: 0px auto 0px auto;
+  padding: 50px 0 0 0;
+/*  background: #fff url('gridVert.png') repeat-y top left;*/
+}
+
+#redLine {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index:-1;
+  height: 0px;
+  width: 1px;
+  display:block;
+  border: 0px solid black;
+  border-right: 1px dotted #3c77bf;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+#content {
+  position: absolute;
+  z-index:1;
+  top: 50px;
+  left: 0;
+}
+
+
+.section {
+  display: block;
+  margin: 0px 0 0px 0;
+}
+
+#settings {
+  display: none;
+  height: 50px;
+  background: #fff;
+}
+
+#input {
+/*  position: fixed;*/
+  top: 50px;
+}
+
+#query {
+  display: block;
+  font-size: 50px;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  border: 0px solid black;
+  border-bottom: 1px dotted #ddd;
+  width: 600px;
+  outline: none;
+  padding: 0 0 0 113px;
+  margin: 0 0 0 0px;
+  background: transparent url('search.jpg') no-repeat center left;
+/*  opacity: 0.2;*/
+  
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -mozilla-transition-property: opacity;
+  
+  -webkit-transition-duration: 150ms;
+  -o-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -mozilla-transition-duration: 150ms;
+  
+  -webkit-transition-timing-funciton: ease-out;
+  -o-transition-timing-funciton: ease-out;
+  transition-timing-funciton: ease-out;
+  -mozilla-transition-timing-funciton: ease-out;
+}
+
+#query.active {
+  opacity: 1;
+}
+
+
+
+#results {
+  margin: 0px 0 0px 0;
+}
+
+ul.categories {
+  display: inline-block;
+  background: #fff;
+  padding: 0px 0 0px 0;
+/*  border-bottom: 1px dashed #ddd;*/
+  width: 600px;
+/*  background: green;*/
+  width: 100px;
+  vertical-align: top;
+  text-align: right;
+}
+
+ul.categories > li {
+  display: block;
+  cursor: pointer;
+  padding: 0px 10px 0px 0;
+  margin: 0 20px 0 0;
+  text-align: right;
+  width: 90px;
+  line-height:50px;
+  
+}
+
+ul.categories > li.active {
+  display: block;
+  cursor: pointer;
+  background: #ab5463; 
+  color:#fff;
+}
+
+
+
+ul.results {
+  display: inline-block;
+/*  background: blue;*/
+  width: 550px;
+  vertical-align: top;
+  margin: 0 0 0 10px;
+
+  
+}
+
+ul.results > li {
+  display: block;
+  font-size: 50px;
+
+}
+
+ul.results > li.tooLong {
+  display: block;
+  font-size: 50px;
+/*  border-bottom: 1px dotted #ddd;*/
+  opacity: 0.2;
+}
+
+
+
+
+#tester {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  opacity:0;
+}
+
+#spacer {
+  display: block;
+  background: #fff;
+  height: 1px;
+}
+
+
+
+
+
+
+
+
+
