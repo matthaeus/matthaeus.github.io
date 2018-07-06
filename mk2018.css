@@ -390,24 +390,33 @@ div.itemBody > p.title {
 
 @media screen and (max-width: 500px) {
 
-  li {
-    display: block;
+  #mainContent {
+    padding: 0 20px 0 20px;
+  }
+
+  ul {
     width: 100%;
   }
 
+  li {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
   li:first-child > p {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 0px;
   }
 
   div.itemDate {
     display: block;
     text-align: left;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
   }
 
   div.itemBody {
     display: block;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
     max-width: 100%;
   }
 
@@ -417,25 +426,29 @@ div.itemBody > p.title {
 
 
   #header {
-    padding: 30px 0.3333em 0.3333em 0.3333em;
+    padding: 30px 0 0 0 ;
   }
 
   #description {
     width: 100%;
   }
 
+   #contact {
+    width: 100%;
+  }
+
 
   #description h1 {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 0px;
   }
 
   #description p {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 0px;
   }
 
 
   #contact p {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 0px;
   }
 
   p.aboutMe {
