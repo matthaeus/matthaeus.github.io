@@ -103,66 +103,6 @@ $(function () {
 
 
 
-	$('body').bind('keydown', function(e) {
-		e.preventDefault();
-		paused = true;
-		// console.log(e);
-		if (e.keyCode == 32) {
-			animator.stop();
-			horizontalSpring.removeStepTrigger();
-			verticalSpring.removeStepTrigger();
-		} else if (e.keyCode = 76) {
-			drawLog = !drawLog;
-			if (drawLog) {
-				$('.log').css('opacity', '1');
-				$('#transformerR').css('outline', '2px solid #ff00ff');
-				$('#transformerS').css('outline', '1px solid #00ff00');
-			} else {
-				$('.log').css('opacity', '0');
-				$('#transformerR').css('outline', '0px solid #ff00ff');
-				$('#transformerS').css('outline', '0px solid #00ff00');
-			}
-		}
-	});
-
-	$('body').bind('keyup', function(e) {
-		e.preventDefault();
-		paused = false;
-		// console.log(e);
-		if (e.keyCode == 32) {
-			animator.play({});
-		}
-	});
-
-
-
-	$('#stiffnessC').bind('mousemove', function(e) {
-		$('#stiffnessCT').val($(this).val());
-		horizontalSpring.setSpringParameters($('#stiffnessCT').val(), $('#massCT').val(), $('#frictionCT').val());
-		verticalSpring.setSpringParameters($('#stiffnessCT').val(), $('#massCT').val(), $('#frictionCT').val());
-	});
-
-	$('#massC').bind('mousemove', function(e) {
-		$('#massCT').val($(this).val());
-		horizontalSpring.setSpringParameters($('#stiffnessCT').val(), $('#massCT').val(), $('#frictionCT').val());
-		verticalSpring.setSpringParameters($('#stiffnessCT').val(), $('#massCT').val(), $('#frictionCT').val());
-
-	});
-
-	$('#frictionC').bind('mousemove', function(e) {
-		$('#frictionCT').val($(this).val()/10);
-		horizontalSpring.setSpringParameters($('#stiffnessCT').val(), $('#massCT').val(), $('#frictionCT').val());
-		verticalSpring.setSpringParameters($('#stiffnessCT').val(), $('#massCT').val(), $('#frictionCT').val());
-
-	});
-
-	// $('.controlT').bind('change', function(e) {
-	// 	horizontalSpring.setSpringParameters($('#stiffnessCT').val(), $('#massCT').val(), $('#frictionCT').val());
-	// 	verticalSpring.setSpringParameters($('#stiffnessCT').val(), $('#massCT').val(), $('#frictionCT').val());
-
-	// });
-
-
 });
 
 
@@ -204,32 +144,6 @@ var nextFrame = function(animatorStats) {
 
 	horizontalSpring.setSpringParameters(s, m, f)
 	verticalSpring.setSpringParameters(s, m, f)
-
-
-	// console.log(animatorStats.frameCount);
-
-	
-
-
-	// $('#horSpeed').css('-webkit-transform', 'scale('+ mouseMovement.currentSpeed.x +', 1)');
-	// $('#verSpeed').css('-webkit-transform', 'scale(1, '+ mouseMovement.currentSpeed.y +')');
-
-	
-
-	// $('#horAcc').css('-webkit-transform', 'scale('+ mouseMovement.currentAcceleration.x +', 1)');
-	// $('#verAcc').css('-webkit-transform', 'scale(1, '+ mouseMovement.currentAcceleration.y +')');
-	// $('#currentAcc').css('-webkit-transform', 'rotate('+ mouseMovement.currentAcceleration.toAbsXYAngle() +'deg) scale('+ mouseMovement.currentAcceleration.length() +', 1)');
-
-	// $('#currentFA').css('-webkit-transform', 'rotate('+ mouseMovement.currentAcceleration.negative().toAbsXYAngle() +'deg) scale('+ mouseMovement.currentAcceleration.negative().length() +', 1)');
-
-
-
-	
-
-
-	// $('#combinedSpeed').css('-webkit-transform', 'rotate('+ angle +'deg)');
-
-
 
 	
 
