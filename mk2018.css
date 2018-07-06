@@ -248,9 +248,17 @@ li {
   line-height: 16px;
 }
 
+li.broken {
+  pointer-events: none;
+}
+
+li.disabled {
+  pointer-events: none;
+}
 
 li.broken p {
   text-decoration: line-through; !important
+
 }
 
 li:hover {
@@ -355,7 +363,9 @@ div.itemBody > p.title {
   left: 0px;
   pointer-events: none;
 
-  background: url('wobblecursor/cursor.png');
+
+
+  background-image: url('wobblecursor/cursor.png');
 
   background-size: contain;
 

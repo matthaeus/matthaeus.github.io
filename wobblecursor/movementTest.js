@@ -84,6 +84,15 @@ $(function () {
 	});
 
 
+	$('.clickable').bind('mouseover', function(e) {
+		$('#ball').css('background-image', 'url(\'wobblecursor/pointer.png\')');
+	});
+
+	$('.clickable').bind('mouseout', function(e) {
+		$('#ball').css('background-image', 'url("wobblecursor/cursor.png")');
+	});
+
+
 	$('body').bind('mouseout', function(e) {
 		$('#ball').hide();
 	});
