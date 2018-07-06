@@ -108,10 +108,11 @@ div.backLink > a:hover {
   width: 100%;
   position: absolute;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 70px 0 0 0;
   color: white;
   font-weight: 600;
   font-size: 14px;
+  opacity: 0.75;
 }
 
 
