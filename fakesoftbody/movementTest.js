@@ -106,8 +106,8 @@ $(function () {
 			drawLog = !drawLog;
 			if (drawLog) {
 				$('.log').css('opacity', '1');
-				$('#transformerR').css('outline', '2px solid #ff00ff');
-				$('#transformerS').css('outline', '1px solid #00ff00');
+				$('#transformerR').css('outline', '2px solid #000000');
+				$('#transformerS').css('outline', '1px solid #000000');
 			} else {
 				$('.log').css('opacity', '0');
 				$('#transformerR').css('outline', '0px solid #ff00ff');

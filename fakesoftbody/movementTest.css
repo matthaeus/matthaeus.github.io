@@ -74,13 +74,46 @@ body {
   display: block;
   background: #ff004d;
   overflow: hidden;
-  font-family: helvetica neue;
+  font-family: "Barlow", sans-serif;
   border-color: #ffffff;
   color: #000;
   padding: 0px;
 /*  cursor: none;*/
 /*  ffffff*/
 }
+
+
+div.backLink {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+}
+
+div.backLink > a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+/*  font-weight: bold;*/
+}
+
+div.backLink > a:hover {
+  text-decoration: underline;
+}
+
+
+#instructions {
+  display: block;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding: 10px 0 0 0;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 
 
 #touchLayer {
@@ -166,7 +199,7 @@ body {
   top: 0px;
   left: 0px;
 
-  background: red;
+  background: white;
   border-radius: 50%;
 
   -webkit-transform: translate(-50%, -50%);
@@ -174,14 +207,14 @@ body {
 
 
 #lastMouseCenter {
-  display: inline-block;
+  display: none;
   height: 6px;
   width: 6px;
   position: absolute;
   top: 0px;
   left: 0px;
 
-  background: #00ffff;
+  background: white;
   border-radius: 50%;
   opacity: 1;
 
@@ -189,7 +222,7 @@ body {
 }
 
 #beforeLastMouseCenter {
-  display: inline-block;
+  display: none;
   height: 6px;
   width: 6px;
   position: absolute;
@@ -207,7 +240,7 @@ body {
 
 
 #horSpeed {
-  display: inline-block;
+  display: none;
   height:2px;
   width: 1px;
   position: absolute;
@@ -220,7 +253,7 @@ body {
 
 
 #verSpeed {
-  display: inline-block;
+  display: none;
   height:1px;
   width: 2px;
   position: absolute;
@@ -233,7 +266,7 @@ body {
 
 
 #currentSpeed {
-  display: inline-block;
+  display: none;
   height:2px;
   width: 1px;
   position: absolute;
@@ -248,7 +281,7 @@ body {
 
 
 #lastSpeed {
-  display: inline-block;
+  display: none;
   height:2px;
   width: 1px;
   position: absolute;
@@ -266,7 +299,7 @@ body {
 
 
 #horAcc {
-  display: inline-block;
+  display: none;
   height:2px;
   width: 1px;
   position: absolute;
@@ -279,7 +312,7 @@ body {
 
 
 #verAcc {
-  display: inline-block;
+  display: none;
   height:1px;
   width: 2px;
   position: absolute;
@@ -293,7 +326,7 @@ body {
 
 
 #currentAcc {
-  display: inline-block;
+  display: none;
   height:2px;
   width: 1px;
   position: absolute;
@@ -308,7 +341,7 @@ body {
 
 
 #currentFA {
-  display: inline-block;
+  display: none;
   height:2px;
   width: 1px;
   position: absolute;
@@ -331,20 +364,11 @@ body {
   top: 100px;
   left: 100px;
 
-  background: #00ff00;
+  background: white;
   opacity: 1;
 
   -webkit-transform-origin: 0% 50%;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -357,7 +381,7 @@ body {
   left: 0px;
   opacity: 1;
 
-  background: #00ff00;
+  background: white;
 
   -webkit-transform: translate(-50%, -50%);
 }
@@ -381,7 +405,7 @@ body {
 
 
 #controls {
-  display: inline-block;
+  display: none;
   width: 300px;
   height: 100px;
 
