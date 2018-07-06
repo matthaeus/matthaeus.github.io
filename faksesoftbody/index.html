@@ -1,0 +1,76 @@
+<html>
+<head>
+
+
+
+	<title>Fake Soft Body - Matthaeus Krenn</title>
+
+	<link rel="stylesheet" href="movementTest.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+</head>
+
+
+<body>
+
+	<script src="jquery.min.js"></script>
+	<script src="mSpring.js"></script>
+	<script src="Vector.js"></script>
+	<script src="Movement_v0001.js"></script>
+	<script src="Animator_v0001.js"></script>
+
+
+	<div id="touchLayer">
+		
+		<div id="transformerR">
+			<div id="transformerS">
+				<div id="ball"></div>
+			</div>
+		</div>
+
+	
+
+		<!-- <div id="anchor"></div> -->
+		<div id="mass" class="log"></div>
+
+		<div id="mouseCenter" class="mouseCenter log"></div>
+		<!-- <div id="horAcc" class="mouseCenter"></div> -->
+		<!-- <div id="verAcc" class="mouseCenter"></div> -->
+		<!-- <div id="currentAcc" class="lastMouseCenter"></div> -->
+		<!-- <div id="currentFA" class="lastMouseCenter"></div> -->
+		<div id="massV" class="mouseCenter log"></div>
+
+
+		<div id="lastMouseCenter" class="lastMouseCenter log"></div>
+		<div id="currentSpeed" class="lastMouseCenter log"></div>
+		<!-- <div id="horSpeed" class="lastMouseCenter"></div> -->
+		<!-- <div id="verSpeed" class="lastMouseCenter"></div> -->
+
+
+		<div id="beforeLastMouseCenter" class="beforeLastMouseCenter log"></div>
+		<div id="lastSpeed" class="beforeLastMouseCenter log"></div>
+
+
+	</div>
+
+
+<!-- 	<div id="controls">
+		<input id="stiffnessC" type="range" min="1" max="500" value="130">
+		<input id="stiffnessCT" class="controlT" type="text" value="130"><br>
+
+		<input id="massC" type="range" min="3" max="100" value="10">
+		<input id="massCT" class="controlT" type="text" value="10"><br>
+		
+		<input id="frictionC" type="range" min="1" max="100" value="38">
+		<input id="frictionCT" class="controlT" type="input" value="3.8"><br>
+	</div> -->
+
+
+
+	<script src="movementTest.js"></script>
+
+</body>
+</html>
