@@ -144,7 +144,6 @@ a:hover {
   text-align: left;
   padding: 0px 0px 00px 0px;
   margin: 0px 0 0px 00px;
-  /*max-width: 400px;*/
   width: 395px;
   vertical-align: top;
 }
@@ -197,7 +196,7 @@ h1 {
   /*font-size: 20px;*/
   /*transform: rotate(0.25turn);*/
   transform-origin: bottom left;
-  position: relative;
+  /*position: relative;*/
   margin: 0 0 0px 20px;
 }
 
@@ -391,6 +390,11 @@ div.itemBody > p.title {
 
 @media screen and (max-width: 500px) {
 
+  li {
+    display: block;
+    width: 100%;
+  }
+
   li:first-child > p {
     margin: 0 0 0 10px;
   }
@@ -404,6 +408,7 @@ div.itemBody > p.title {
   div.itemBody {
     display: block;
     padding: 0px 0px 0px 10px;
+    max-width: 100%;
   }
 
   body {
@@ -413,6 +418,10 @@ div.itemBody > p.title {
 
   #header {
     padding: 30px 0.3333em 0.3333em 0.3333em;
+  }
+
+  #description {
+    width: 100%;
   }
 
 
@@ -427,6 +436,10 @@ div.itemBody > p.title {
 
   #contact p {
     margin: 0 0 0 10px;
+  }
+
+  p.aboutMe {
+    width: 100%;
   }
 
 
