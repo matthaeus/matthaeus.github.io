@@ -54,7 +54,7 @@ $(function(){
     addMessage('searching...');
     setLoader(true);
     
-    $.getJSON('http://words.bighugelabs.com/api/2/f8dcc937f6362348148b2822789abe63/'+ query +'/json?callback=?', function(data) {
+    $.getJSON('https://words.bighugelabs.com/api/2/f8dcc937f6362348148b2822789abe63/'+ query +'/json?callback=?', function(data) {
       setLoader(false);
       drawResults(data);
       }).error(function() {
