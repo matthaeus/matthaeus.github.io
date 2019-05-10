@@ -1,0 +1,41 @@
+things to control in a car:
+
+ENTERTAINMENT
+volume
+choose song
+radio frequency
+programmed radio station
+
+
+AC
+temperature
+fan strength
+airflow position
+seat heating
+
+
+
+
+AMBIENT LIGHT
+on off
+
+
+SEAT POSITION
+backrest angle
+distance to steering wheel
+
+
+ROOF
+amount of openness
+
+
+WINDOW
+amount of openness
+
+
+OUTSIDE MIRROR
+angles on two axes
+
+
+
+

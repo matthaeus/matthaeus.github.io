@@ -1,0 +1,147 @@
+<html>
+<head>
+  <link rel="stylesheet" href="tla.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <title>3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <script src="magictouch.js"></script>
+</head>
+<body>
+  <div id="logo"></div>
+  
+  <div id="tutorial">
+    <div id="tc0" class="tutorialcross"></div>
+    <div id="tc1" class="tutorialcross"></div>
+    <div id="tc2" class="tutorialcross tsi0"></div>
+    <div id="tc3" class="tutorialcross tsi0"></div>
+    <div id="tc4" class="tutorialcross tsi0"></div>
+    <div id="tci"></div>
+    
+  </div>
+  
+  
+  <div id="finger0" class="finger"></div>
+  <div id="finger1" class="finger"></div>
+  <div id="finger2" class="finger"></div>
+  <div id="finger3" class="finger"></div>
+  <div id="finger4" class="finger"></div>
+  
+  
+  
+  
+
+  
+  <div id="fingerCircleActive0" class="circle fingerCircleActive fatable MC"></div>
+  <!-- <div id="fingerCircleActive1" class="circle fingerCircleActive"></div>
+  <div id="fingerCircleActive2" class="circle fingerCircleActive"></div>
+  <div id="fingerCircleActive3" class="circle fingerCircleActive"></div>
+  <div id="fingerCircleActive4" class="circle fingerCircleActive"></div> -->
+  
+  
+  <div id="level" class="MC"></div>
+  
+  <div id="fingerCircle" class="circle fatable MC"></div>
+  
+  <div id="fingerCenter" class="finger MC"></div>
+  
+<!--   <div id="dotWhite" class="dot"></div>
+  <div id="dotBlack" class="dot"></div> -->
+  
+  <div id="tag">
+    <div class="triangle"></div>
+    <div class="rectangle MC">300</div>
+  </div>
+  
+  <div id="scaleIndicator"></div>
+  
+  <ul id="scale" class="MC">
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+</ul>
+  
+  <div id="originY"></div>
+  
+
+  
+  
+  <div id="log">I am the log</div>
+  
+  <div id="topDisplay">300</div>
+  
+  
+  
+  <div id="touchLayer"></div>
+  
+
+  
+  <object id="tuio" type="application/x-tuio" style="width: 0px; height: 0px;">
+     
+  </object>
+  
+  
+  <script src="jquery.min.js"></script>
+  <!--<script src="springTo.js"></script>-->
+  <script src="units.js"></script>
+  <script src="tla.js"></script>
+</body>
+</html>
