@@ -1,0 +1,204 @@
+<html>
+<head>
+  <link rel="stylesheet" href="tla.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <title>3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <script src="magictouch.js"></script>
+</head>
+<body>
+
+  <!-- <div id="tutorial">
+    <div id="tc0" class="tutorialcross"></div>
+    <div id="tc1" class="tutorialcross"></div>
+    <div id="tc2" class="tutorialcross tsi0"></div>
+    <div id="tc3" class="tutorialcross tsi0"></div>
+    <div id="tc4" class="tutorialcross tsi0"></div>
+    <div id="tci"></div>
+  </div> -->
+
+
+  <div id="tutorialIcon1" class="tutorialIcon"></div>
+  <div id="tutorialIcon2" class="tutorialIcon"></div>
+  <div id="tutorialIcon3" class="tutorialIcon"></div>
+  <div id="tutorialIcon4" class="tutorialIcon"></div>
+
+  
+  <div id="imagePreloader">
+    <img src="icons/20.svg" />
+    <img src="icons/21.svg" />
+    <img src="icons/30.svg" />
+    <img src="icons/31.svg" />
+    <img src="icons/40.svg" />
+    <img src="icons/41.svg" />
+    <img src="icons/50.svg" />
+    <img src="icons/51.svg" />
+  </div>
+  
+  
+  <div id="singleFinger" class="finger"></div>
+  
+  
+  <!-- <div id="finger0" class="finger"></div>
+  <div id="finger1" class="finger"></div>
+  <div id="finger2" class="finger"></div>
+  <div id="finger3" class="finger"></div>
+  <div id="finger4" class="finger"></div> -->
+  
+  
+  
+  
+
+  
+  <div id="fingerCircleActive0" class="circle fingerCircleActive fatable MC outable"></div>
+  <!-- <div id="fingerCircleActive1" class="circle fingerCircleActive"></div>
+  <div id="fingerCircleActive2" class="circle fingerCircleActive"></div>
+  <div id="fingerCircleActive3" class="circle fingerCircleActive"></div>
+  <div id="fingerCircleActive4" class="circle fingerCircleActive"></div> -->
+  
+  
+
+  
+  
+  <div id="fingerCircle" class="circle fatable MC outable">
+    <div id="fCI" class="outable"></div>
+  </div>
+  
+  <div id="fingerCenter" class="finger MC outable"></div>
+  
+  <div id="centerLabel" class="MC outable">
+    <p>frequency</p>
+    <div class="cover"></div>
+  </div>
+  
+    <div id="level" class="MC"></div>
+  
+  <!-- <div id="levelDark" class="MC"></div> -->
+  
+<!--   <div id="dotWhite" class="dot"></div>
+  <div id="dotBlack" class="dot"></div> -->
+  
+  <div id="tag">
+    <div class="triangle"></div>
+    <div class="rectangle MC outable">300</div>
+  </div>
+  
+  <!-- <div id="scaleIndicator"></div> -->
+  
+  <ul id="scale" class="MC outable">
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+    <li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li><li class="scaleUnit"></li>
+</ul>
+
+  
+
+
+  <div id="tdIconW">
+    <div id="tdIcon20" class="tdIcon inner" style="background-image: url(icons/20.png)"></div>
+    <div id="tdIcon21" class="tdIcon outer" style="background-image: url(icons/21.png)"></div>
+    <div id="tdIcon30" class="tdIcon inner" style="background-image: url(icons/30.png)"></div>
+    <div id="tdIcon31" class="tdIcon outer" style="background-image: url(icons/31.png)"></div>
+    <div id="tdIcon40" class="tdIcon inner" style="background-image: url(icons/40.png)"></div>
+    <div id="tdIcon41" class="tdIcon outer" style="background-image: url(icons/41.png)"></div>
+    <div id="tdIcon50" class="tdIcon inner" style="background-image: url(icons/50.png)"></div>
+    <div id="tdIcon51" class="tdIcon outer" style="background-image: url(icons/51.png)"></div>
+  </div>
+  
+  <div id="tdTextW" class="outable MC">
+    <div id="tdText" class="outable">-32.6dB</div>
+    <!-- <div id="tdSubText" class="outable">Subtext</div> -->
+    <div id="songImage0" class="songImage" style="background-image: url(icons/song1.png)"></div>
+    <div id="songImage1" class="songImage" style="background-image: url(icons/song2.png)"></div>
+    <div id="songImage2" class="songImage" style="background-image: url(icons/song3.png)"></div>
+    <div id="songImage3" class="songImage" style="background-image: url(icons/song4.png)"></div>
+    <div id="songImage4" class="songImage" style="background-image: url(icons/song5.png)"></div>
+  </div>
+  
+  
+  
+  <div id="mapOverlay" class="idle"></div>
+  
+  <div id="touchLayer"></div>
+  
+  <div id="mapButton"></div>
+  
+  <!-- <div id="logo"></div>
+  
+  <div id="helpButton" class="pulse">?</div> -->
+
+  <!-- <div id="bgTest"></div> -->
+
+
+  
+  <object id="tuio" type="application/x-tuio" style="width: 0px; height: 0px;">
+     
+  </object>
+  
+  
+  <script src="jquery.min.js"></script>
+  <!--<script src="springTo.js"></script>-->
+  <script src="units.js"></script>
+  <script src="supporting.js"></script>
+  <script src="tla.js"></script>
+</body>
+</html>
