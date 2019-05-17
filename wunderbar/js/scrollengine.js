@@ -216,8 +216,8 @@ ScrollEngine.prototype.getProximities = function() {
 	
 	for (var i=0; i < se.pageOnBarMiddles.length; i++) {
 		var iTop = se.pageOnBarMiddles[i];
-		var x = Math.abs(iTop - se.barPos.m)/100;
-		var newW = a * Math.pow(se.Eu, -b * x * x);  
+		var x = Math.abs(iTop - se.barPos.m)/500;
+		var newW = a * Math.pow(se.Eu, -b *x *x);  
 		//console.log(x, newW);
 		//var scrollPos = Math.round($(window).scrollTop() / se.pageCount);
 		//var newW = Math.pow(2.3 * (1 - Math.abs(iTop - se.barPos.m) / (se.pageSizeOnBar * 3)), 7);
@@ -311,10 +311,10 @@ ScrollEngine.prototype.buildLog = function() {
 	$('<div id="barMiddle" class=""></div>').appendTo('#seLog');
 	
 	//the stats window that displays information as text
-	$(''
-		+'<div id="seLogStats" class="">'
-		+'</div>'
-	).appendTo('#seLog');
+	// $(''
+	// 	+'<div id="seLogStats" class="">'
+	// 	+'</div>'
+	// ).appendTo('#seLog');
 }
 
 
@@ -363,7 +363,7 @@ ScrollEngine.prototype.updateLogStats = function() {
 	//newStats += '<br>number: ' + se.options.pageChangeDelayDuration;
 	
 	
-	$('#seLogStats').html(newStats);
+	// $('#seLogStats').html(newStats);
 }
 
 

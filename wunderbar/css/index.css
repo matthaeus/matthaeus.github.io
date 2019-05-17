@@ -1,6 +1,7 @@
 body {
 	margin:0px 0 0 0;
 	padding:0 0 0 0;
+	background-color: black;
 }
 
 .dummyContainer {
@@ -41,6 +42,10 @@ body {
 
 .fullScreenImage {
 	display:block;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
 }
 
 #blackScreen {

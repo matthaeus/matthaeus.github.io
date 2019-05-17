@@ -15,5 +15,14 @@
 	right:10px;
 	font-size:10px;
 	font-family:helvetica;
-	color:#000000;
+	color:#ffffff;
+	transition: opacity 0.5s;
+}
+
+.faint {
+	opacity: 0.3;
+}
+
+.keep100 {
+	opacity: 1 !important;
 }

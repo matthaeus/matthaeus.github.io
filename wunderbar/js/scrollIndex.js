@@ -7,6 +7,9 @@ ScrollIndex = function() {
 	
 	//si.drawVisuals();
 	si.buildIndex();
+
+	setTimeout(function() {si.newPageOnBar(0);}, 1);
+	// si.hideIndex(0);
 }
 
 
@@ -42,6 +45,8 @@ ScrollIndex.prototype.buildIndex = function() {
 		tmpOptions.identifier = pageNumber;
 		si.springs.push(new JsSpring(tmpOptions));
 	}
+
+
 }
 
 
@@ -54,7 +59,8 @@ ScrollIndex.prototype.showIndex = function(position) {
 	// 	}, 200);
 	// }
 	si.visible = true;
-	$('#scrollIndex').show();
+	$('.siEntry').removeClass('faint');
+	// $('#scrollIndex').show();
 }
 
 
@@ -64,7 +70,8 @@ ScrollIndex.prototype.hideIndex = function(position) {
 	// $('#scrollIndex').animate({
 	// 	'right': '-500'
 	// }, 200);
-	$('#scrollIndex').fadeOut(300);
+	$('.siEntry').addClass('faint');
+	// $('#scrollIndex').fadeOut(300);
 }
 
 
@@ -100,16 +107,21 @@ ScrollIndex.prototype.changeProximities = function(prox) {
 
 ScrollIndex.prototype.newPageOnBar = function(newPage) {
 	var si = this;
-	
+	console.log('new page on bar', newPage);
 	//console.log(newPage);
 	
-	var openSpring = si.springs[newPage];
-	openSpring.start(0, 0, 0, 200);
-	$('#siEntry'+newPage).css('font-weight', 'bold');
+	if (si.lastSpring != newPage) {
+		var openSpring = si.springs[newPage];
+		openSpring.start(0, 0, 0, 200);
+		$('#siEntry'+newPage).css('font-weight', 'bold');
+		$('#siEntry'+newPage).addClass('keep100');
+	}
 	
-	if (si.lastSpring != 'none') {
+	
+	if (si.lastSpring != 'none' && si.lastSpring != newPage) {
 		si.springs[si.lastSpring].start(0,200,0,0);
 		$('#siEntry'+si.lastSpring).css('font-weight', 'normal');
+		$('#siEntry'+si.lastSpring).removeClass('keep100');
 	}
 	
 	si.lastSpring = newPage;

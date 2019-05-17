@@ -103,7 +103,7 @@ body {
 /*  opacity: 1;*/
   
   border: 70px dashed rgba(255,255,255,0);
-  border: 2px solid rgba(255,255,255,1);
+  border: 2px solid rgba(255,0,255,1);
   -webkit-transition: border 150ms ease-in;
 }
 

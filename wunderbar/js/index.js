@@ -7,13 +7,15 @@ $(function(){
 	$('.page').each(function(){
 		$('<div class="dummyContainer"></div>').appendTo('body').css('height', window.innerHeight);
 	});
+
+	$('.fullScreenImage').css('height', window.innerHeight).css('width', window.innerWidth);
 	
 	var seOptions = {};
 	
 	seOptions.showLog = false;
-    seOptions.calcProx = false;
+    seOptions.calcProx = seOptions.showLog;
 	seOptions.pageChangeThreshold = 0.10;
-	seOptions.pageChangeDelayDuration = 500; //milliseconds
+	seOptions.pageChangeDelayDuration = 250; //milliseconds
 	
 	seOptions.onPageChange = function(newPage) {
 		//console.log(newPage);
@@ -31,8 +33,8 @@ $(function(){
 	seOptions.onDelayPassed = function(lastPage, newPage) {
 		$('#page'+newPage).hide().css('z-index', 5).fadeIn(300);
 		$('#page'+lastPage).css('z-index', 1).fadeOut(300);
-		window.location.hash = 'page'+newPage;
-		//scrollIndex.hideIndex();
+		// window.location.hash = 'page'+newPage;
+		scrollIndex.hideIndex();
 	}
 
 	seOptions.onNewHashReached = function(hashName) {
@@ -44,7 +46,7 @@ $(function(){
 	
 	seOptions.onWindowResize = function() {
 		//Scroll Index positions need to be changed here!
-		
+		$('.fullScreenImage').css('height', window.innerHeight).css('width', window.innerWidth);
 	}
 	
 	seOptions.onProximitiesChange = function(proximities) {
