@@ -12,7 +12,7 @@ $(function(){
 	
 	var seOptions = {};
 	
-	seOptions.showLog = false;
+	seOptions.showLog = true;
     seOptions.calcProx = seOptions.showLog;
 	seOptions.pageChangeThreshold = 0.10;
 	seOptions.pageChangeDelayDuration = 250; //milliseconds
