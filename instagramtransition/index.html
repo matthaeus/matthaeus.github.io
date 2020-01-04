@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <META name="keywords" content="matthaeus,matthaeus,krenn,interface,product,design,prototyping,car,vr,ar">
+   	<META name="description" content="IMOK Brass Letters - Matthaeus Krenn">
+    <META name="revisit-after" content="10-days">
+    <META name="robots" content="index,follow">
+    <META name="author" content="Matthaeus Krenn">
+    <META name="copyright" content="Matthaeus Krenn">
+
+	<title>Matthaeus Krenn - Instagram Stories Transition</title>
+
+
+	<link rel="stylesheet" href="mk2018.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+
+</head>
+<body>
+
+
+	<div class="perspectiveContainer">
+		<div class="cubeWrapper">
+			<div class="cubeContainer">
+				<div class="firstStory">
+					<div id="firstBG" class="background"></div>
+				</div>
+<!-- 				<div class="secondStory">
+					<div id="secondBG" class="background"></div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+
+	<div class="perspectiveContainer">
+		<div class="cubeWrapper">
+			<div class="cubeContainer">
+				<div class="firstStory">
+					<div class="deepUI"></div>
+				</div>
+<!-- 				<div class="secondStory">
+					<div class="flatUI"></div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="perspectiveContainer">
+		<div class="cubeWrapper">
+			<div class="cubeContainer">
+				<div class="secondStory">
+					<div id="secondBG" class="background"></div>
+				</div>
+				<div class="secondStory">
+					<div class="flatUI"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+<script>
+
+	function toggle() {
+		var test = document.getElementsByClassName("cubeContainer");
+    
+	    for (var i = 0; i < test.length; i++) {
+	    	test[i].classList.toggle('rotated');
+	    }
+
+	    test = document.getElementsByClassName("cubeWrapper");
+    
+	    for (i = 0; i < test.length; i++) {
+	    	test[i].classList.toggle('rotated');
+	    }
+	}
+
+	document.onmouseup = toggle;
+
+	
+
+</script>
+
+</body>
+</html>
