@@ -127,6 +127,7 @@ a:hover {
   margin: 0 auto 0 auto;
   padding: 0;
   text-align: center;
+  /*background-color: grey;*/
 }
 
 
@@ -137,6 +138,7 @@ a:hover {
   margin: 00px auto 0 auto;
   padding: 80px 0 0 0;
   text-align: center;
+  /*background-color: yellow;*/
 }
 
 #description {
@@ -146,6 +148,7 @@ a:hover {
   margin: 0px 0 0px 00px;
   width: 395px;
   vertical-align: top;
+  /*background-color: pink;*/
 }
 
 
@@ -178,13 +181,11 @@ a:hover {
 #contact a {
   color: #333333;
   text-decoration: none;
-  cursor: none;
 }
 
 #contact a:hover {
   color: #000000;
   text-decoration: underline;
-  cursor: none;
 }
 
 
@@ -210,6 +211,25 @@ p.aboutMe {
   padding: 0px 0px 0px 0px;
 }
 
+
+
+#latest {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+  padding: 0px 0 0 0;
+  /*background-color: red;*/
+  text-align: right;
+}
+
+#latestImage {
+  display: inline-block;
+  width: 700px;
+  background-color: blue;
+  height:150px;
+  border-radius: 3px;
+}
 
 
 ul {
@@ -313,6 +333,27 @@ div.itemBody > p.title {
   font-weight: 600;
 }
 
+div.itemBody > img.hero {
+  display: block;
+  width: 100%;
+  background-color: #6c6c6c;
+  height: 240px;
+  margin: 8px 0 8px 0;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+div.itemBody > video.heroVideo {
+  display: block;
+  width: 100%;
+  background-color: #6c6c6c;
+  margin: 8px 0 8px 0;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+}
 
 
 
@@ -381,7 +422,22 @@ div.itemBody > p.title {
 
   body {
     font-size: 14px;
+    cursor: default;
   }
+
+  #transformerR {
+    display: none;
+  }
+
+
+  a {
+    cursor: pointer;
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+
 }
 
 
@@ -422,6 +478,7 @@ div.itemBody > p.title {
 
   body {
     font-size: 14px;
+    cursor: default;
   }
 
 
@@ -453,6 +510,27 @@ div.itemBody > p.title {
 
   p.aboutMe {
     width: 100%;
+  }
+
+  div.itemBody > img.hero {
+    border-radius: 0px;
+    height:400px;
+  }
+
+  div.itemBody > video.heroVideo {
+    border-radius: 0px;
+  }
+
+  #transformerR {
+    display: none;
+  }
+
+  a {
+    cursor: pointer;
+  }
+  
+  a:hover {
+    cursor: pointer;
   }
 
 
