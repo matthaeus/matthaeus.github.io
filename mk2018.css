@@ -337,7 +337,7 @@ div.itemBody > img.hero {
   display: block;
   width: 100%;
   background-color: #6c6c6c;
-  height: 240px;
+  /*height: 240px;*/
   margin: 8px 0 8px 0;
   border-radius: 5px;
   background-size: cover;
