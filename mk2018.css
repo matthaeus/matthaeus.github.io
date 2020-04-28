@@ -135,7 +135,7 @@ a:hover {
   display: block;
   width: 100%;
   max-width: 800px;
-  margin: 00px auto 40px auto;
+  margin: 0px auto 40px auto;
   padding: 80px 0 0 0;
   text-align: center;
   /*background-color: yellow;*/
@@ -482,11 +482,13 @@ div.itemBody > video.heroVideo {
   body {
     font-size: 14px;
     cursor: default;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
 
   #header {
-    padding: 30px 0 0 0 ;
+    padding: 100px 0 20px 0 ;
   }
 
   #description {
