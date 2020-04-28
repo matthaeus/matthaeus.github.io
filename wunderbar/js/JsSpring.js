@@ -87,7 +87,7 @@ JsSpring.prototype.init = function () {
 	spring.pos = 0;
 	
 	//sets the constant spring parameters to a useful standard
-	spring.setSpringParameters(120, 4, 2);
+	spring.setSpringParameters(120, 4, 5);
 }
 
 
