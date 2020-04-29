@@ -245,16 +245,15 @@ p.blogPreviewEx {
 
 
 #footer {
-/*	font-family: 'times', 'times new roman', serif;*/
 	text-align: center;
-	color: #D0D0D0;
-	padding: 60px 0;
+	color: #C94945;
+	padding: 160px 0;
 }
 
 
 #footer > img {
-/*	display: block;*/
 	margin: 20px 0;
+	width: 14px;
 }
 
 

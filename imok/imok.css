@@ -219,15 +219,15 @@ div.section {
 
 
 #footer {
-	font-family: 'georgia', 'times', 'times new roman', serif;
 	text-align: center;
-	padding: 60px 0;
+	color: #C94945;
+	padding: 160px 0;
 }
 
 
 #footer > img {
-/*	display: block;*/
 	margin: 20px 0;
+	width: 14px;
 }
 
 
