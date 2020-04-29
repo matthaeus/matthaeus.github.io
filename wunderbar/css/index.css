@@ -4,6 +4,8 @@ body {
 	background-color: black;
 }
 
+
+
 .dummyContainer {
 	display:block;
 	width:10px;
@@ -57,4 +59,25 @@ body {
 	height:100%;
 	background-color:#000000;
 	opacity:0.8;
+}
+
+
+
+div.backLink {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 10px;
+}
+
+div.backLink > a {
+	text-decoration: none;
+	color: #808080;
+/*	font-weight: bold;*/
+}
+
+div.backLink > a:hover {
+	text-decoration: underline;
+	color: #303030;
 }
