@@ -95,7 +95,7 @@ body {
 
 
 a {
-  cusor: none;
+  cursor: none;
 }
 
 a:hover {
@@ -239,7 +239,7 @@ ul {
 	display: inline-block;
 	list-style: none;
   /*background-color: pink;*/
-  text-aligh: left;
+  text-align: left;
   padding: 0px 0px 00px 0px;
   margin: 20px 0 0px 00px;
   /*max-width: 400px;*/
@@ -280,7 +280,7 @@ li.disabled {
 }
 
 li.broken p {
-  text-decoration: line-through; !important
+  text-decoration: line-through !important;
 
 }
 
