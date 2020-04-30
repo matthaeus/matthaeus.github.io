@@ -139,7 +139,7 @@ a:hover {
   padding: 80px 0 0 0;
   text-align: center;
   /*background-color: yellow;*/
-  color: #1100ff;
+  /* color: #1100ff; */
 }
 
 #description {
@@ -201,7 +201,7 @@ h1 {
   transform-origin: bottom left;
   /*position: relative;*/
   margin: 0 0 0px 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 
@@ -264,7 +264,7 @@ li {
   list-style: none;
   text-align: left;
   /*font-size: 14px;*/
-  padding: 0.3333em;
+  /* padding: 0.3333em; */
   /*cursor: pointer;*/
   transition: background-color 0.2s;
   /*width: 500px;*/
@@ -457,10 +457,26 @@ div.itemBody > video.heroVideo {
     width: 100%;
   }
 
+  #bigProjects li {
+    margin: 0px 0 60px 0;
+  }
+
+  #bigProjects li:first-child {
+    margin: 0px 0 20px 0;
+  }
+
+  li:first-child {
+    margin: 0px 0 20px 0;
+  }
+
   li {
     display: block;
     width: 100%;
-    margin: 0px 0 80px 0;
+  }
+
+  li:hover {
+    background-color: rgba(0,0,0,0.0);
+    /*color:white;*/
   }
 
   li:first-child > p {
