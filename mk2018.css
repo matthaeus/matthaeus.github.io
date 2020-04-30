@@ -214,6 +214,23 @@ p.aboutMe {
   padding: 0px 0px 0px 0px;
 }
 
+p.aboutMeMobile {
+  display: none;
+  text-align: left;
+  /*font-size: 20px;*/
+  padding: 0px 0px 0px 0px;
+}
+
+p.aboutMeMobile a {
+  text-decoration: underline;
+  color: #303030;
+}
+
+p.aboutMeMobile a:hover {
+  text-decoration: none;
+  color: #303030;
+}
+
 
 
 #latest {
@@ -428,6 +445,10 @@ div.itemBody > video.heroVideo {
     cursor: default;
   }
 
+  #contact {
+    display: none;
+  }
+
   #transformerR {
     display: none;
   }
@@ -439,6 +460,15 @@ div.itemBody > video.heroVideo {
   
   a:hover {
     cursor: pointer;
+  }
+
+  p.aboutMe {
+    display:none;
+  }
+
+  p.aboutMeMobile {
+    display: block;
+    width: 270px;
   }
 
 }
@@ -463,6 +493,7 @@ div.itemBody > video.heroVideo {
 
   #bigProjects li:first-child {
     margin: 0px 0 20px 0;
+    display: none;
   }
 
   li:first-child {
@@ -504,7 +535,7 @@ div.itemBody > video.heroVideo {
 
 
   #header {
-    padding: 100px 0 20px 0 ;
+    padding: 20px 0 20px 0 ;
   }
 
   #description {
@@ -530,6 +561,10 @@ div.itemBody > video.heroVideo {
   }
 
   p.aboutMe {
+    display:none;
+  }
+
+  p.aboutMeMobile {
     width: 100%;
   }
 
