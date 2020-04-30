@@ -275,6 +275,10 @@ ul {
   padding: 0px 0px 100px 0px;
 }
 
+ul {
+  padding-bottom: 60px;
+}
+
 
 
 li {
@@ -472,6 +476,10 @@ div.itemBody > video.heroVideo {
   p.aboutMeMobile {
     display: block;
     width: 270px;
+  }
+
+  ul {
+    padding-bottom: 00px;
   }
 
 }
