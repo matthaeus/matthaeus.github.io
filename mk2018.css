@@ -353,7 +353,7 @@ div.itemBody > p.title {
   font-weight: 600;
 }
 
-div.itemBody > img.hero {
+div.itemBody > div.hero {
   display: block;
   width: 100%;
   background-color: #6c6c6c;
@@ -568,7 +568,7 @@ div.itemBody > video.heroVideo {
     width: 100%;
   }
 
-  div.itemBody > img.hero {
+  div.itemBody > div.hero {
     border-radius: 0px;
     height:500px;
   }

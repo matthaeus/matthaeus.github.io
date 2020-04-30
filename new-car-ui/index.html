@@ -11,7 +11,7 @@
 		<META name="author" content="Matthaeus Krenn">
 		<META name="copyright" content="Matthaeus Krenn">
 
-    <title>A New Car UI - Matthaeus Krenn</title>
+    <title>A New Car UI | Matthaeus Krenn</title>
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.matthaeuskrenn.com/new-car-ui/">
@@ -21,8 +21,8 @@
     <meta property="og:description" content="A New Car UI - How touch screen controls in cars should really work."/>
 
 
-	 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="newcarui.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	 	<link href='https://fonts.googleapis.com/css?family=Barlow:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="newcarui2.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
 
 	</head>
@@ -39,38 +39,34 @@
 
 		<div class="wrapper">
 		  <div class="section" id="intro">
-		    <h1>A New Car UI</h1>
-        <h2>How touch screen controls in cars should really work</h2>
+		    <h1>A New Car UI<br><br></h1>
+        <h2>
+          With the advent of touch interfaces in cars, drivers are facing
+          a new challenge: interacting with their infotainment system without
+          any tactile feedback.<br>
+          This project looks at the option of using relative motion for input
+          instead of absolutely positioned elements on the screen (at least
+          for some functions). This could lower the level of distraction that
+          comes from trying to hit small controls with pin-point accuracy while driving.  
+
+        </h2>
+
+        <p id="credits">
+          <br>
+          <span class="role">Execution</span>Interactive prototype in JS (<a href="prototype">try on iPad</a>)<br>
+          <span class="role">Completed In</span>2014<br>
+          <br>
+          
+        </p>
+
+
 		    <a href="https://youtu.be/XVbuk3jizGM" class="videoLink">
           <div>
 
           </div>
         </a>
 
-        <h1>The problem</h1>
-
-        <p class="mainDescription">
-          Several automotive companies have begun replacing traditional controls in their cars with touch screens. Unfortunately, their eagerness to set new trends in hardware, is not matched by their ambition to create innovative software experiences for these new input mechanisms. Instead of embracing new constraints and opportunities, they merely replicate old button layouts and shapes on these new, flat, glowing surfaces.<br><br>
-
-So even controls for air condition and infotainment - which are commonly used while driving - now lack any tactile feedback and require the driver&#8217;s dexterity and attention when operated. Considering that distracted driving is the number one cause for car accidents, this is not a step in the right direction.
-
-        </p>
-
-<img src="images/statusquo.jpg" class="statusQuo"/>
-
-
-<br><br><br><br><br>
-
-<h1>My Proposal</h1>
-
-        <p class="mainDescription">
-I propose a new mode that can be invoked at any time: It clears the entire screen of those tiny, intangible control elements and makes way for big, forgiving gestures that can be performed anywhere. In place of the lost tactile feedback, the interface leverages the driver&#8217;s muscle memory to ensure their ability to control crucial features without taking their eyes off the road. 
-
-
-<br><br>
-<a href="http://youtu.be/XVbuk3jizGM">Watch a video</a> of the interface in action, or <a href="prototype/">try the prototype</a> on your tablet (so far only tested on iPads).
-
-        </p>
+      
 
 
 		  </div>
@@ -78,34 +74,35 @@ I propose a new mode that can be invoked at any time: It clears the entire scree
 	    <div class="section" id="content">
 		    <ul>
 		      <li>
+            <p class="descriptionHead">Your touch will never be off</p>
+                <p class="mainDescription">
+                As your fingers touch the screen, the desired control moves in place to always be at your fingertips.
+              </p>
       		  <a href="images/01.jpg">
   		        <div class="screenshot">
                 <img src="images/01.jpg" />
-  		        </div>
-  		        <div>
-  		          <h3></h3>
-  		          <p class="mainDescription">Your touch will never be off: As your fingers touch the screen, the desired control moves in place to always be at your fingertips.</p>
   		        </div>
   		      </a>
   		    </li>
 
 
           <li>
+            <p class="descriptionHead">One simple gesture</p>
+                <p class="mainDescription">
+                Dragging up or down is how adjustments are made to the selected setting.
+              </p>
             <a href="images/02b.jpg">
               <div class="screenshot">
                 <img src="images/02b.jpg" />
               </div>
-              <div>
-                <h3></h3>
-                <p class="mainDescription">
-                  One simple gesture: Dragging up or down is how adjustments are made to the selected setting.
-                </p>
-              </div>
+
             </a>
           </li>
 
 
           <li>
+           
+
             <a href="images/03b.jpg">
               <div class="screenshot">
                 <img src="images/03b.jpg" />
@@ -202,7 +199,7 @@ I propose a new mode that can be invoked at any time: It clears the entire scree
     
 		<div class="section" id="footer">
 	    <p>&copy; Matthaeus Krenn</p>
-		  <img src="../srcfiles/madeinvienna.png" title="Made in Vienna">
+		  <img src="../srcfiles/madeinvienna.png" title="With love from Vienna">
 		</div>
 
 		

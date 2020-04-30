@@ -99,11 +99,11 @@ div.backLink > a:hover {
 body {
 	background-color: #F8F8F8;
 	margin: 0px auto 0px auto;
-	padding: 60px 0 0 0;
+	padding: 80px 0 0 0;
 	text-align: center;
-	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'verdana', sans-serif;
+	font-family: 'Barlow', 'Helvetica Neue', 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'verdana', sans-serif;
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 1.3333em;
 	color: #303030;
 }
 
@@ -112,8 +112,7 @@ div.wrapper {
 	margin: 0px auto 0px auto;
 	text-align: left;
 	width: 100%;
-	max-width: 1400px;
-/*	outline: 1px solid red;*/
+	max-width: 800px;
 }
 
 @media screen and (max-width: 480px) {
@@ -127,37 +126,57 @@ div.section {
 
 
 #intro {
-	text-align: center;
+	text-align: left;
 }
+
 
 
 h1 {
 	display: block;
-	text-align: center;
-	font-size: 24px;
-	color: #000;
-	font-weight: 300;
-	line-height: 28px;
-	margin: 0 auto;
-	margin-top: 30px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	width: 90%;
+	/* font-size: 30px; */
+	color: #303030;
+	font-weight: 600;
+	margin: 0 0 0 0;
+	width: 100%;
+	max-width: 400px;
+	padding: 0 20px 0 20px;
 }
 
 h2 {
 	display: block;
-	text-align: center;
-	font-size: 18px;
-	color: #505050;
-	font-weight: 300;
-	line-height: 20px;
-	margin: 0 auto;
-	margin-top: 10px;
-	width: 90%;
+	/* font-size: 30px; */
+	color: #303030;
+	font-weight: 400;
+	margin: 0 0 0 0 ;
+	width: 100%;
+	max-width: 400px;
+	padding: 0 20px 0 20px;
 }
 
 
+#credits {
+	display:block;
+	margin: 0 0 0 0;
+	width: 100%;
+	max-width: 400px;
+	padding: 0 20px 0 20px;
+	line-height: 1.3333em;
+}
+
+span.role {
+	display: inline-block;
+	width: 120px;
+	font-weight: 600;
+}
+
+#credits a {
+	text-decoration: none;
+	color:#303030;
+}
+
+#credits a:hover {
+	text-decoration: underline;
+}
 
 a.videoLink {
 	display: inline-block;
@@ -174,8 +193,8 @@ a.videoLink {
 
 a.videoLink div {
 	display: inline-block;
-	background: rgba(0,0,0,0.4) url('../assets/video_play.png') no-repeat center center;
-	background-size: 140px; 
+	background: rgba(0,0,0,0.4) url('images/video_play.png') no-repeat center center;
+	background-size: 600px; 
 	visibility: visible;
 	margin: 0 auto;
 	width: 100%;
@@ -191,16 +210,28 @@ a.videoLink div:hover {
 
 
 
+
+
+p.descriptionHead {
+	display: block;
+	margin: 0px 0 0px 0;
+	max-width: 400px;
+	width: 100%;
+	color: #303030;
+	font-weight: 600;
+	text-align: left;
+	padding: 0 20px 0 20px;
+}
+
 p.mainDescription {
 	display: block;
-	margin: 40px auto 0 auto;
-	max-width: 600px;
-	width: 90%;
-	font-size: 18px;
-	line-height: 24px;
-	color: #000;
-	font-weight: 300;
+	margin: 0px 0 20px 0;
+	max-width: 400px;
+	width: 100%;
+	color: #303030;
+	font-weight: 400;
 	text-align: left;
+	padding: 0 20px 0 20px;
 }
 
 p.mainDescription a{
@@ -213,6 +244,8 @@ p.mainDescription a:hover{
 	
 	text-decoration: underline;
 }
+
+
 
 
 img.statusQuo {
@@ -235,7 +268,7 @@ img.statusQuo {
 
 #content li {
 	display: block;
-	margin: 100px 0 0 0;
+	margin: 80px 0 0 0;
 }
 
 #content li a {
@@ -244,17 +277,19 @@ img.statusQuo {
 }
 
 
-.screenshot {
+video.screenshot {
 	display: block;
-	margin: 0;
+	margin: 0 auto 0 auto;
+	width: 100%;
+	max-width: 800px;
 }
 
 
 .screenshot img {
 	display: block;
-	margin: 0;
+	margin: 0 auto 0 auto;
 	width: 100%;
-	max-width: 1400px;
+	max-width: 800px;
 }
 
 
@@ -264,14 +299,17 @@ img.statusQuo {
 }
 
 
+
+
 .description p {
 	text-align: center;
 	font-size: 21px;
-	font-weight: 300;
 	color: #000;
 	line-height: 22px;
 	text-decoration: none !important;
 }
+
+
 
 
 
@@ -293,5 +331,22 @@ img.statusQuo {
 	display: block;
 	margin: 20px 0;
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+	body {
+	  font-size: 14px;
+	}
+
+}
+
+
 
 
