@@ -89,18 +89,60 @@ body {
 	color: #303030;
 	/*overflow: hidden;*/
   /*text-transform: uppercase;*/
-  cursor:none;
+  cursor: default;
   line-height: 1.3333em;
 }
 
 
 a {
-  cursor: none;
+  cursor: pointer;
 }
 
 a:hover {
-  cursor: none;
+  cursor: pointer;
 }
+
+#experimentsLabel {
+  display: inline-block;
+}
+
+#cursorToggle {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* color: red; */
+}
+
+#cursorToggle.enabled {
+  cursor: pointer;
+  text-decoration: underline;
+  /* color: #00dd00; */
+}
+
+
+
+#cursorToggle:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#cursorToggleBox {
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  background-color: red;
+  /* float:right; */
+  margin: 6px 3px 0 0px;
+  border-radius: 2px;
+}
+
+#cursorToggleBox.enabled {
+  background-color: #00ff00;
+
+}
+
+
 
 
 
@@ -323,6 +365,10 @@ li:first-child {
   
 }
 
+li:first-child:hover {
+  background-color: rgba(0,0,0,0);
+}
+
 
 li:first-child > p {
   margin: 0 0 0 93px;
@@ -482,6 +528,10 @@ div.itemBody > video.heroVideo {
     padding-bottom: 00px;
   }
 
+  #cursorToggle {
+    display: none;
+  }
+
 }
 
 
@@ -602,6 +652,10 @@ div.itemBody > video.heroVideo {
 
   #smallProjects {
     margin-top: 100px;
+  }
+
+  #cursorToggle {
+    display: none;
   }
 
 

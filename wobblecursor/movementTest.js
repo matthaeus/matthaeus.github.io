@@ -18,6 +18,8 @@ var massPosV = new Vector(0,0,0);
 var mouseClicked = true;
 var drawLog = false;
 
+var cursorShowing = false;
+
 var s = 48;
 var m = 10;
 var f = 2.4;
@@ -99,6 +101,29 @@ $(function () {
 
 	$('body').bind('mouseover', function(e) {
 		$('#ball').show();
+	});
+
+
+	$('#cursorToggle').bind('click', function(e) {
+		if (!cursorShowing) {
+			cursorShowing = true;
+			$("#transformerR").css("display", "inline-block");
+			$("body").css("cursor", "none");
+			$("a").css("cursor", "none");
+			$("a:hover").css("cursor", "none");
+			$("#cursorToggle:hover").css("cursor", "none");
+			$("#cursorToggleBox").addClass('enabled');
+			$("#cursorToggle").addClass('enabled');
+		} else {
+			cursorShowing = false;
+			$("#transformerR").css("display", "none");
+			$("body").css("cursor", "default");
+			$("a").css("cursor", "pointer");
+			$("a:hover").css("cursor", "pointer");
+			$("#cursorToggle:hover").css("cursor", "pointer");
+			$("#cursorToggleBox").removeClass('enabled');
+			$("#cursorToggle").removeClass('enabled');
+		}
 	});
 
 
