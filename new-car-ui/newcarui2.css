@@ -154,6 +154,16 @@ h2 {
 }
 
 
+h2 a {
+	text-decoration: none;
+	color:#303030;
+}
+
+h2 a:hover {
+	text-decoration: underline;
+}
+
+
 #credits {
 	display:block;
 	margin: 0 0 0 0;
