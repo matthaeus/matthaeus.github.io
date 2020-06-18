@@ -1,0 +1,77 @@
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="ox.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="oxList.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <script src="supporting.js"></script>
+  <title>New Tab</title>
+</head>
+<body>
+  
+  <div id="fb-root"></div>
+
+
+  <div id="storageDebugger">
+  </div>
+  
+  
+  <div id="welcome">
+    <div id="welcomeCont">
+      <h1>OX Bookmarks has been set up successfully!</h1>
+      <ol>
+        <li>
+          <div class="text">
+            1. A folder called "OX" has been created in your bookmarks bar.
+          </div>
+        </li>
+        <li>
+          <div class="text">2. All bookmarks saved in the OX folder will be added to the list below and shown
+          in new tabs.</div>
+        </li>
+        <li>
+          <div class="text">3. Click <span id="tutorialHide">here</span> to hide this introduction and start saving bookmarks!</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+  
+  <!-- <h1 class="headline">catch up</h1> -->
+  <div id="header">
+    <div class="headerCont"></div>
+  </div>
+  
+  <div id="shareBanner">
+    <!-- <div id="shareBannerWrapper">
+          <div id="shareTextWrapper">
+            <h1>Are you happy with OX Bookmarks?</h1>
+            <h2>Tell your friends and followers!</h2>
+          </div>
+          <div id="shareButtonsWrapper">
+            <div class="fbShare shareButton">
+              <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fox-bookmarks-youll-be-hap%2Fafaahdbjknpmcapecaaclhdmjnlcmbmh&amp;send=false&amp;layout=button_count&amp;width=200&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=210&amp;appId=183106291858519" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
+            </div>
+            <div class="twitterShare shareButton">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chrome.google.com/webstore/detail/ox-bookmarks-youll-be-hap/afaahdbjknpmcapecaaclhdmjnlcmbmh" data-text="I love using OX to manage my read-later bookmarks:">Tweet</a>
+            </div>
+          </div>
+          <div id="shareCloseWrapper">
+            <a href="#" id="shareBannerHider">&#x2716</a>
+          </div>
+        </div> -->
+  </div>
+  
+  <ul id="bookmarks"></ul>
+  
+  <div id="noneMsg">
+    There are no bookmarks in your OX folder.
+  </div>
+  
+  <div id="footer">OX Bookmarks <span id="versionNumber"></span> by <a href="http://matthaeuskrenn.com">Matthaeus Krenn</a> - 2013</div>
+  <!-- <div id="array"></div> -->
+  
+  <script src="jquery.min.js"></script>
+  <!--<script src="springTo.js"></script>-->
+  <script src="ox2.js"></script>
+</body>
+</html>
