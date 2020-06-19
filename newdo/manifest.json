@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "New-Do",
-  "description": "Sync a To-Do list across all your new tabs, across all your computers.",
-  "version": "0.0.0.1",
+  "description": "Sync a to-do list across all your new tabs, across all your computers.",
+  "version": "0.0.0.2",
   
   "icons": {
             "16": "newdoIcon16.png",
