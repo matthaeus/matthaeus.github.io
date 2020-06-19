@@ -73,7 +73,7 @@ body {
 	text-align: center;
   font-family: 'Barlow', sans-serif;
 	font-size: 13px;
-  padding: 100px 0px 40px 0px;
+  padding: 60px 0px 80px 0px;
   /* width: 800px; */
 }
 
@@ -88,12 +88,11 @@ body {
 
 
 #newItemText {
-  
   display: table-cell;
   width: 750px;
-  font-size: 30px;
+  font-size: 25px;
   color: #000;
-  padding: 20px;
+  padding: 12px 20px;
   border: 0px;
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
@@ -102,10 +101,14 @@ body {
 
 
 
-
 #newItemText:focus {
   border: 0px;
   outline: none;
+}
+
+::placeholder { 
+  color: #bbb;
+  /* color: #0B8AFF; */
 }
 
 #submitButtonContainer {
@@ -125,10 +128,59 @@ body {
 
 
 #submitButton:hover {
-  
   background-color: #0A7AE0;
-  
 }
+
+
+
+#checkedList{
+  margin-top: 100px;
+}
+
+#checkedList li{
+  opacity: 0.3;
+}
+
+#checkedList li:hover {
+  opacity: 1;
+}
+
+/* #checkedList li:last-child {
+  border-bottom: 0px !important;
+} */
+
+#checkedList li:first-child {
+  border-top: 1px solid #ddd;
+}
+
+
+
+#removeUI {
+  display: none;
+  margin: 0px auto;
+  /* background-color: red; */
+  width: 800px;
+  text-align: left;
+}
+
+#removeUI p {
+  display: inline-block;
+  color: red;
+  margin: 12px 20px;
+  cursor: pointer;
+  font-size: 25px;
+  opacity: 0.3;
+  font-weight: 300;
+  /* text-transform: uppercase; */
+}
+
+#removeUI p:hover {
+  /* text-decoration: underline; */
+  opacity: 1;
+}
+
+
+
 
 
 ul {
@@ -150,9 +202,9 @@ li {
 
 .itemText {
   display: table-cell;
-  font-size: 30px;
+  font-size: 25px;
   color: #000;
-  padding: 20px;
+  padding: 12px 20px;
   font-weight: 300;
   width: 750px;
   overflow: hidden;
@@ -173,6 +225,7 @@ li {
 .doneCheck {
   display: inline-block;
   cursor: pointer;
+  padding: 3px;
 }
 
 

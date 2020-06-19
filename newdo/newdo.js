@@ -4,9 +4,24 @@ var listPosition = 0;
 
 $(function () {
 
-  $('#submitButton').click(function() {
-    addItem($('#newItemText').val());
+  // $('#submitButton').click(function() {
+  //   addItem($('#newItemText').val());
+  // });
+
+  $('#newItemText').keydown(function(e) { 
+    var val = $(this).val();
+    $(this).val(val.substr(0, 1).toUpperCase() + val.substr(1));
   });
+
+  $('#newItemText').keyup(function(e) {
+    if(e.keyCode == 13) { 
+      addItem($('#newItemText').val()); 
+    } 
+  }); 
+
+  $('#removeUI p').click(function() {
+    purgeAllChecked();
+  }); 
   
   init();
   
@@ -40,10 +55,6 @@ function init() {
       }
     }
   });
-
-
-
-
   
 }
 
@@ -51,6 +62,8 @@ function init() {
 function clearList() {
   $('ul').empty();
 }
+
+
 
 
 function populateList() {
@@ -65,15 +78,20 @@ function populateList() {
   }
 
   $('#addUI').css('display', 'table');
+  $('#newItemText').focus();
 }
+
+
+
 
 
 
 function appendListItem(item) {
   if (item.status == 'idle') {
-    $('#newDoList').append('<li><p class="itemText">' + item.content + '</p><div class="checkContainer"><input id="checkBox'+listPosition+'" type="checkbox" class="doneCheck" data-listpos="'+ listPosition +'"></div></li>');
+    $('#newDoList').append('<li id="item'+listPosition+'"><p class="itemText">' + item.content + '</p><div class="checkContainer"><input id="checkBox'+listPosition+'" type="checkbox" class="doneCheck" data-listpos="'+ listPosition +'"></div></li>');
   } else if (item.status == 'checked') {
-    $('#newDoList').append('<li><p class="itemText checked">' + item.content + '</p><div class="checkContainer"><input id="checkBox'+listPosition+'" type="checkbox" class="doneCheck" data-listpos="'+ listPosition +'" checked></div></li>');
+    $('#checkedList').prepend('<li id="item'+listPosition+'" class="checked"><p class="itemText checked">' + item.content + '</p><div class="checkContainer"><input id="checkBox'+listPosition+'" type="checkbox" class="doneCheck" data-listpos="'+ listPosition +'" checked></div></li>');
+    $('#removeUI').css('display', 'table');
   }
 
   $('#checkBox'+listPosition).click(function() {
@@ -89,11 +107,11 @@ function appendListItem(item) {
 function toggleItem(listPos) {
   var item = list[listPos];
   if (item.status == 'idle') {
-    $('ul li:nth-child('+(listPos+1)+') p.itemText').addClass('checked');
+    $('#item'+(listPos+1)).addClass('checked');
     item.status = 'checked';
     list[listPos] = item;
   } else if (item.status == 'checked') {
-    $('ul li:nth-child('+(listPos+1)+') p.itemText').removeClass('checked');
+    $('#item'+(listPos+1)).removeClass('checked');
     item.status = 'idle';
     list[listPos] = item;
   }
@@ -101,6 +119,8 @@ function toggleItem(listPos) {
     console.log('check toggle saved');
   });
 }
+
+
 
 
 
@@ -118,6 +138,30 @@ function addItem(text) {
     document.getElementById('newItemText').value='';
     $('#newItemText').focus();
   });
+}
+
+
+
+function purgeAllChecked() {
+  $('#checkedList').empty();
+
+  var limit = list.length-1;
+
+  for (var i = limit; i>=0; i--) {
+    var item = list[i];
+    if (item.status == 'checked') {
+      list.splice(i, 1);
+    }
+  }
+
+  
+  $('#removeUI').css('display', 'none');
+
+  chrome.storage.sync.set({newDoList: list}, function () {
+    console.log('checked purged');
+  });
+
+
 }
 
 
