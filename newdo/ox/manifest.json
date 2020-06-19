@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "OX: Bookmarks you'll be happy to look at.",
-  "description": "Replace your new tabs page with a beautiful, fast and simple list of bookmarks.",
-  "version": "0.224",
+  "name": "NewDo",
+  "description": "Sync a ToDo list across all your new tabs, across all your computers.",
+  "version": "0.001",
   
   "icons": {
             "16": "ox16.png",
@@ -15,7 +15,7 @@
   },
 
   
-  "content_security_policy": "script-src 'self' https://platform.twitter.com https://ssl.google-analytics.com https://connect.facebook.net; object-src 'self'",
+  "content_security_policy": "script-src 'self'; object-src 'self'",
   
-  "permissions": ["bookmarks", "storage"]
+  "permissions": ["storage"]
 }

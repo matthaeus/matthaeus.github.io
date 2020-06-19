@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "New-Do",
+  "description": "Sync a To-Do list across all your new tabs, across all your computers.",
+  "version": "0.001",
+  
+  "icons": {
+            "16": "newdoIcon16.png",
+            "128": "newdoIcon128.png"
+             },
+  
+  "chrome_url_overrides" : {
+      "newtab": "newdo.html"
+  },
+
+  
+  "content_security_policy": "script-src 'self' https://fonts.googleapis.com/; object-src 'self'",
+  
+  "permissions": ["storage"]
+}
