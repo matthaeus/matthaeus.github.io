@@ -26,9 +26,19 @@ function init() {
 
     console.log(data)
 
-    showList();
-    // addItem('finish eating pasta');
-    // deleteAllEntries();
+    populateList();
+  });
+
+
+  chrome.storage.onChanged.addListener(function(changes, namespace) {
+    for(key in changes) {
+      if(key === 'newDoList') {
+        // console.log('change in storage', changes.newDoList);
+        list = changes.newDoList.newValue;
+        clearList();
+        populateList();
+      }
+    }
   });
 
 
@@ -38,12 +48,14 @@ function init() {
 }
 
 
-function showList() {
-  // if (typeof syncData.newDoList === 'undefined') {
+function clearList() {
+  $('ul').empty();
+}
 
-  // } else {
 
-  // }
+function populateList() {
+
+  listPosition = 0;
 
   var limit = list.length-1;
 
@@ -56,6 +68,7 @@ function showList() {
 }
 
 
+
 function appendListItem(item) {
   if (item.status == 'idle') {
     $('#newDoList').append('<li><p class="itemText">' + item.content + '</p><div class="checkContainer"><input id="checkBox'+listPosition+'" type="checkbox" class="doneCheck" data-listpos="'+ listPosition +'"></div></li>');
@@ -64,7 +77,7 @@ function appendListItem(item) {
   }
 
   $('#checkBox'+listPosition).click(function() {
-    checkItem($(this).data('listpos'));
+    toggleItem($(this).data('listpos'));
   });
 
   listPosition++;
@@ -73,14 +86,19 @@ function appendListItem(item) {
 
 
 
-function checkItem(listPos) {
-  console.log(listPos);
-  $('ul li:nth-child('+(listPos+1)+') p.itemText').addClass('checked');
+function toggleItem(listPos) {
   var item = list[listPos];
-  item.status = 'checked';
-  list[listPos] = item;
+  if (item.status == 'idle') {
+    $('ul li:nth-child('+(listPos+1)+') p.itemText').addClass('checked');
+    item.status = 'checked';
+    list[listPos] = item;
+  } else if (item.status == 'checked') {
+    $('ul li:nth-child('+(listPos+1)+') p.itemText').removeClass('checked');
+    item.status = 'idle';
+    list[listPos] = item;
+  }
   chrome.storage.sync.set({newDoList: list}, function () {
-    console.log('check saved');
+    console.log('check toggle saved');
   });
 }
 
@@ -95,7 +113,7 @@ function addItem(text) {
 
   chrome.storage.sync.set({newDoList: list}, function () {
     console.log('saved');
-    appendListItem(item);
+    // appendListItem(item);
     // $('#newDoList').append('<li><p class="itemText">' + text + '</p><input type="checkbox" class="doneCheck"></li>');
     document.getElementById('newItemText').value='';
     $('#newItemText').focus();
