@@ -118,7 +118,8 @@ function appendListItem(item) {
       }
       */
 
-      var url = item.content.toLowerCase();
+      var url = item.content.substr(0, 1).toLowerCase() + item.content.substr(1);
+      // var url = item.content.toLowerCase();
       var htmlString = '<a href="'+ url +'">'+ url +'</a>'
       
       $('#newDoList').append('<li id="item'+listPosition+'"><p class="itemText">' + htmlString + '</p><div class="checkContainer"><input id="checkBox'+listPosition+'" type="checkbox" class="doneCheck" data-listpos="'+ listPosition +'"></div></li>');

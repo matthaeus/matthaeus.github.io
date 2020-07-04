@@ -3,7 +3,7 @@
 
   "name": "Check Check Check!",
   "description": "To-do list in you new tabs. Synced in Chrome across all your computers.",
-  "version": "0.0.0.3",
+  "version": "0.0.0.4",
   
   "icons": {
             "16": "newdoIcon16.png",
