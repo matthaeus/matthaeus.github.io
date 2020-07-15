@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Check Check Check!",
-  "description": "To-do list in you new tabs. Synced in Chrome across all your computers.",
-  "version": "0.0.0.4",
+  "name": "Check Check Check",
+  "description": "Todo list in you new tabs. Synced in Chrome across all your computers.",
+  "version": "0.0.0.5",
   
   "icons": {
             "16": "newdoIcon16.png",
