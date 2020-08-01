@@ -22,6 +22,11 @@ $(function () {
   $('#removeUI p').click(function() {
     purgeAllChecked();
   }); 
+
+  $('#darkToggle').click(function() {
+    $('body').toggleClass('dark');
+  }); 
+
   
   init();
   
