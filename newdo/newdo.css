@@ -70,6 +70,7 @@ html, body {
 
 
 body {
+  /*display: none;*/
 	background: #fff;
 	text-align: center;
   font-family: 'Barlow', sans-serif;
@@ -258,35 +259,58 @@ li {
   background-size: cover;
 }
 
-body.dark #darkToggle {
 
-  background-image: url('newdoDarkToggleDark.png');
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #35363A;
+    color: #fff;
+    /* width: 800px; */
+  }
+
+  body li {
+    border-bottom: 1px solid #444;
+  }
+
+  body #newItemText {
+    background-color: #35363A;
+    color: #fff;
+  }
+
+  body #checkedList li:first-child {
+    border-top: 1px solid #444;
+  }
+
+  body ::placeholder { 
+    color: #777;
+    /* color: #0B8AFF; */
+  }
+
+  body #darkToggle {
+    background-image: url('newdoDarkToggleDark.png');
+  }
 }
 
 
-
-
-
-
-
-body.dark #newItemText {
-  background-color: #000;
-  color: #fff;
-}
 
 
 body.dark {
-  background: #000;
-  text-align: center;
-  font-family: 'Barlow', sans-serif;
-  font-size: 13px;
-  padding: 60px 0px 80px 0px;
+  background: #35363A;
   color: #fff;
   /* width: 800px; */
 }
 
 body.dark li {
   border-bottom: 1px solid #444;
+}
+
+body.dark #newItemText {
+  background-color: #35363A;
+  color: #fff;
 }
 
 
@@ -298,4 +322,43 @@ body.dark #checkedList li:first-child {
 body.dark ::placeholder { 
   color: #777;
   /* color: #0B8AFF; */
+}
+
+
+body.dark #darkToggle {
+
+  background-image: url('newdoDarkToggleDark.png');
+}
+
+
+
+
+
+body.light {
+  background: #fff;
+  color: #000;
+  /* width: 800px; */
+}
+
+body.light li {
+  border-bottom: 1px solid #ddd;
+}
+
+body.light #newItemText {
+  background-color: #fff;
+  color: #fff;
+}
+
+body.light #checkedList li:first-child {
+  border-top: 1px solid #ddd;
+}
+
+body.light ::placeholder { 
+  color: #bbb;
+  /* color: #0B8AFF; */
+}
+
+body.light #darkToggle {
+
+  background-image: url('newdoDarkToggleLight.png');
 }

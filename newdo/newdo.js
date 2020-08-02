@@ -24,7 +24,7 @@ $(function () {
   }); 
 
   $('#darkToggle').click(function() {
-    $('body').toggleClass('dark');
+    toggleDarkMode();
   }); 
 
   
@@ -38,13 +38,32 @@ $(function () {
 
 function init() {
 
-  console.log("init");
+  // console.log("init");
+
+
+
+  chrome.storage.local.get('newDoDarkMode', function(data) {
+    // console.log(data.newDoDarkMode2);
+    if(typeof data.newDoDarkMode !== 'undefined') {
+      if (data.newDoDarkMode) {
+        $('body').addClass('dark');
+      } else {
+        $('body').addClass('light');
+      }
+    } else {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        $('body').addClass('dark');
+      } else {
+        $('body').addClass('light');
+      }
+     }
+  });
 
 
   chrome.storage.sync.get({newDoList: []}, function(data) {
     list = data.newDoList;
 
-    console.log(data)
+    // console.log(data)
 
     populateList();
   });
@@ -203,9 +222,8 @@ function purgeAllChecked() {
   chrome.storage.sync.set({newDoList: list}, function () {
     console.log('checked purged');
   });
-
-
 }
+
 
 
 
@@ -227,3 +245,25 @@ function validURL(str) {
     '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
   return !!pattern.test(str);
 }
+
+
+
+
+function toggleDarkMode() {
+  if ($('body').hasClass('dark')) {
+    chrome.storage.local.set({newDoDarkMode: false}, function () {});
+    $('body').removeClass('dark');
+    $('body').addClass('light');
+  } else {
+    chrome.storage.local.set({newDoDarkMode: true}, function () {});
+    $('body').removeClass('light');
+    $('body').addClass('dark');
+  }
+}
+
+
+
+
+
+
+
