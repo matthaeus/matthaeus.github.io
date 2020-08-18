@@ -224,7 +224,19 @@ li {
   width: 750px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; overflow: hidden;
+  /* white-space: nowrap;  */
+}
+
+.itemText a {
+  color: #000;
+}
+
+.itemText a:visited {
+  color: #000;
+}
+
+.itemText a:hover {
+  color: #666;
 }
 
 .itemText.checked {
@@ -264,6 +276,60 @@ li {
 
 
 
+body.light {
+  background: #fff;
+  color: #000;
+  /* width: 800px; */
+}
+
+body.light li {
+  border-bottom: 1px solid #ddd;
+}
+
+body.light #newItemText {
+  background-color: #fff;
+  color: #fff;
+}
+
+body.light #checkedList li:first-child {
+  border-top: 1px solid #ddd;
+}
+
+body.light ::placeholder { 
+  color: #bbb;
+  /* color: #0B8AFF; */
+}
+
+body.light #darkToggle {
+
+  background-image: url('newdoDarkToggleLight.png');
+}
+
+body.light .itemText a {
+  color: #000;
+}
+
+body.light .itemText a:visited {
+  color: #000;
+}
+
+body.light .itemText a:hover {
+  color: #666;
+}
+
+
+
+
+
+
+
+
+/* ////////////  DARK STYLES  ///////////////////////////////////// */
+
+
+
+
+
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -293,6 +359,18 @@ li {
   body #darkToggle {
     background-image: url('newdoDarkToggleDark.png');
   }
+
+  body .itemText a {
+    color: #fff;
+  }
+  
+  body .itemText a:visited {
+    color: #fff;
+  }
+  
+  body .itemText a:hover {
+    color: #ccc;
+  }
 }
 
 
@@ -314,7 +392,6 @@ body.dark #newItemText {
 }
 
 
-
 body.dark #checkedList li:first-child {
   border-top: 1px solid #444;
 }
@@ -324,41 +401,24 @@ body.dark ::placeholder {
   /* color: #0B8AFF; */
 }
 
-
 body.dark #darkToggle {
 
   background-image: url('newdoDarkToggleDark.png');
 }
 
-
-
-
-
-body.light {
-  background: #fff;
-  color: #000;
-  /* width: 800px; */
-}
-
-body.light li {
-  border-bottom: 1px solid #ddd;
-}
-
-body.light #newItemText {
-  background-color: #fff;
+body.dark .itemText a {
   color: #fff;
 }
 
-body.light #checkedList li:first-child {
-  border-top: 1px solid #ddd;
+body.dark .itemText a:visited {
+  color: #fff;
 }
 
-body.light ::placeholder { 
-  color: #bbb;
-  /* color: #0B8AFF; */
+body.dark .itemText a:hover {
+  color: #ccc;
 }
 
-body.light #darkToggle {
 
-  background-image: url('newdoDarkToggleLight.png');
-}
+
+
+
