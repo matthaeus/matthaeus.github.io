@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+  
+  
+  
+  * {
+      -webkit-font-smoothing: antialiased;
+      box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+  }
+
+
+  /*///////////////////////////////////////////////////////////*/
+
+
+body {
+	background-color: #020914;
+	/* overflow: hidden; */
+	width: 5000vw;
+	height: 100vh;
+
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+	display: none;
+  }
+  
+
+  
+
+#background {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 1458px;
+	height: 1000px;
+	background-image: url('background.png');
+	background-repeat: no-repeat;
+  	background-position: right top;
+	box-shadow: 0px 36px 266px rgba(0, 0, 0, 0.77), 0px 15.0399px 111.128px rgba(0, 0, 0, 0.553518), 0px 8.04107px 59.4146px rgba(0, 0, 0, 0.459003), 0px 4.50776px 33.3073px rgba(0, 0, 0, 0.385), 0px 2.39404px 17.6893px rgba(0, 0, 0, 0.310997), 0px 0.996212px 7.3609px rgba(0, 0, 0, 0.216482);	
+	border: 0.5px solid rgb(255, 255, 255, 0.15);
+	border-radius: 6px;
+}
+
+#miniBar {
+	position: absolute;
+	right: 175px;
+	top: 24px;
+	width: 20px;
+	height: 2px;
+
+	background: #FFFFFF;
+	opacity: 0.5;
+	border-radius: 4px;
+}
+
+
+#hover {
+	position: absolute;
+	right:  160px;
+	top: 0px;
+	width: 40px;
+	height: 24px;
+
+	background: #FFFFFF;
+	opacity: 0;
+	border-radius: 4px;
+	cursor: default;
+}
+
+#hover.on {
+	opacity: 0.04;
+}
+
+#hover.scroll {
+	opacity: 0.04;
+	cursor: none;
+}
+
+
+#volumeIcon {
+	position: absolute;
+	right: 168px;
+	top: 4px;
+	width: 22px;
+	height: 16px;
+
+	background: url('volumeIconSprite.png');
+	/* outline: 1px solid red; */
+}
+
+#volumeIcon.volume0 {
+	background-position: 0px 0px;
+}
+
+#volumeIcon.volume1 {
+	background-position: -22px 0px;
+}
+
+#volumeIcon.volume2 {
+	background-position: -44px 0px;
+}
+
+#volumeIcon.volume3 {
+	background-position: -66px 0px;
+}
+
+
+
+#ui {
+	position: absolute;
+	top: 24px;
+	right:160px;
+	width: 298px;
+	height: 80px;
+
+	background: #192740;
+	border: 1px solid #465368;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 0px 0.5px #000000;
+	border-radius: 6px;
+	opacity: 0;
+}
+
+#ui.show {
+	opacity: 1;
+}
+
+
+#label {
+	position: absolute;
+	left: 14px;
+	top: 13px;
+	width: 41px;
+	height: 16px;
+
+	font-family: SF Pro Text, Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	/* identical to box height */
+
+	letter-spacing: -0.02em;
+
+	color: #FFFFFF;
+}
+
+
+
+#sliderBG {
+	position: absolute;
+	width: 270px;
+	height: 22px;
+	left: 14px;
+	top: 37px;
+
+	background: #3C4C65;
+	border-radius: 11px;
+}
+
+
+#slider {
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	left: 15px;
+	top: 38px;
+
+	background: #FFFFFF;
+	border-radius: 11px;
+}
+
+#sliderHandle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 263px;
+	top: 38px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.14);
+	border-radius: 11px;
+}
+
+#sliderIcon {
+	position: absolute;
+	width: 16px;
+	height: 12px;
+	left: 17px;
+	top: 42px;
+
+	background: url('sliderIconSprite.png');
+}
+
+#sliderIcon.volume0 {
+	background-position: 0px 0px;
+}
+
+#sliderIcon.volume1 {
+	background-position: -16px 0px;
+}
+
+#sliderIcon.volume2 {
+	background-position: -32px 0px;
+}
+
+#sliderIcon.volume3 {
+	background-position: -48px 0px;
+}
