@@ -90,12 +90,22 @@ window.onscroll = (e) => {
             // console.log(dx, dy);
             ui.classList = "show";
             hover.classList = "scroll";
-            volumePercent = clamp(volumePercent - dx / 10, 0, 100);
+            if (Math.abs(dx) > Math.abs(dy)) {
+                volumePercent = clamp(volumePercent - dx / 10, 0, 100);
+            } else {
+                volumePercent = clamp(volumePercent + dy / 10, 0, 100);
+            }
+            
 
             if (volumePercent != 0 && volumePercent != 100) {
                 stopElastic();
-            } else if ((volumePercent == 100 || volumePercent == 0) && Math.abs(dx) > 0) {
-                addElasticImpulse(dx/800);
+            } else if ((volumePercent == 100 || volumePercent == 0) && Math.max(Math.abs(dx), Math.abs(dy)) > 0) {
+                if (Math.abs(dx) > Math.abs(dy)) {
+                    addElasticImpulse(dx/800);
+                } else {
+                    addElasticImpulse(-dy/800);
+                }
+                
             }
             
             redrawUI();
@@ -204,7 +214,7 @@ redrawUI();
 
 window.onload = (e) => {
     setTimeout(() => {
-        window.scrollTo(document.body.clientWidth/2, 0);
+        window.scrollTo(document.body.clientWidth/2, document.body.clientHeight/2);
     }, 0.1);
     
 }
