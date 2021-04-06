@@ -52,7 +52,7 @@ $(function(){
     
     clearScreen();
     addMessage('searching...');
-    setLoader(true);
+    // setLoader(true);
     
     $.getJSON('https://words.bighugelabs.com/api/2/f8dcc937f6362348148b2822789abe63/'+ query +'/json?callback=?', function(data) {
       setLoader(false);
@@ -113,7 +113,7 @@ $(function(){
       }
     }
     console.log()
-    
+    clearInterval(timer);
   }
   
   function clearScreen() {
